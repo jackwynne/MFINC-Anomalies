@@ -83,7 +83,7 @@ a = a + 1;
 waitbar(a/ta)
 
 %% A2: Gross Profitability 
-crspa.gpa = (crspa.at-crspa.at)./crspa.at;
+crspa.gpa = (crspa.revt-crspa.cogs)./crspa.at;
 
 a = a + 1;
 waitbar(a/ta)
@@ -164,7 +164,7 @@ waitbar(a/ta)
 
 close(h2)
 
-writetable(crspa,'Sample_Compustat.csv');
+save("crsp+an.mat");
 % Save the output
 % save('Dataset_Compustat_2010_2018.mat','Compustat20102018','-append');
 %==========================================================================
