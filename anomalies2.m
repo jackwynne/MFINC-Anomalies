@@ -38,8 +38,10 @@ for i = 1:nfirms
     dlc_i_lag = lagmatrix(dlc_i,[1]);
     txp_i_lag = lagmatrix(txp_i,[1]);
     ads_i_lag = lagmatrix(ads_i,[1]);
-    me_i_lag = lagmatrix(me_i,[5]);
-    prc_i_lag = lagmatrix(prc_i, [5]);
+    me_i_lag5 = lagmatrix(me_i,[5]);
+    prc_i_lag = lagmatrix(prc_i, [1]);
+    prc_i_lag5 = lagmatrix(prc_i, [5]);
+    rtn_i = prc_i - prc_i_lag;
     crspa.ATtm1(fts_i,1) = at_i_lag; 
     crspa.PPEGTtm1(fts_i,1) = ppegt_i_lag;
     crspa.INVTtm1(fts_i,1) = invt_i_lag;
@@ -49,8 +51,11 @@ for i = 1:nfirms
     crspa.DLCtm1(fts_i,1) = dlc_i_lag;
     crspa.TXPtm1(fts_i,1) = txp_i_lag;
     crspa.ADStm1(fts_i,1) = ads_i_lag;
-    crspa.MEtm5(fts_i,1) = me_i_lag;
-    crspa.PRCtm5(fts_i,1) = prc_i_lag;
+    crspa.MEtm5(fts_i,1) = me_i_lag5;
+    crspa.PRCtm1(fts_i,1) = prc_i_lag;
+    crspa.PRCtm5(fts_i,1) = prc_i_lag5;
+    crspa.rtn(fts_i,1) = rtn_i;
+
     waitbar(i / nfirms)
 end
 close(h)
@@ -60,16 +65,21 @@ crspq.at_bop = nan(nobs,1);     % Pre-allocate
 crspq = sortrows(crspq,{'GVKEY','fyearq','fqtr'});
 id = crspq.GVKEY;  uid = unique(id);  nfirms = length(uid);
 yyyymm = (crspq.fyearq .* 10) + crspq.fqtr;
-niq = crspq.niq;
+niq = crspq.niq;        prcq = crspq.prccq;
 crspq.meq = (crspq.cshoq .* crspq.prccq);
 h3 = waitbar(0,'Please wait for quarterly variables...'); 
 for i = 1:nfirms
     fts_i = (id == uid(i)); 
     yyyymm_i = yyyymm(fts_i,1); 
     niq_i = niq(fts_i,1);
+    prcq_i = prcq(fts_i,1);
     % calculate the one-period lag
     niq_i_lag = lagmatrix(niq_i, [1]);
+    prcq_i_lag = lagmatrix(prcq_i, [1];)
+    rtnq_i = prcq_i - prcq_i_lag;
     crspq.NIQqm1(fts_i,1) = niq_i_lag;
+    crspq.PRCQqm1(fts_i,1) = prcq_i_lag;
+    crspq.rtnq(fts_i,1) = rtnq_i;
     waitbar(i / nfirms)
 end
 close(h3)
