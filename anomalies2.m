@@ -75,7 +75,7 @@ for i = 1:nfirms
     prcq_i = prcq(fts_i,1);
     % calculate the one-period lag
     niq_i_lag = lagmatrix(niq_i, [1]);
-    prcq_i_lag = lagmatrix(prcq_i, [1];)
+    prcq_i_lag = lagmatrix(prcq_i, [1]);
     rtnq_i = prcq_i - prcq_i_lag;
     crspq.NIQqm1(fts_i,1) = niq_i_lag;
     crspq.PRCQqm1(fts_i,1) = prcq_i_lag;
