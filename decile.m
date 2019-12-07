@@ -7,6 +7,7 @@ gpa = crspa.gpa;        ag = crspa.ag;      iva = crspa.iva;
 noa = crspa.noa;        ac = crspa.ac;      nsi = crspa.nsi;
 cei = crspa.cei;
 
+%% Calculate Deciles
 for y = minyear:maxyear
     fts_y = (year == y); 
     gpa_y = gpa(fts_y, 1);
@@ -32,4 +33,18 @@ for y = minyear:maxyear
     crspa.ac_dec(fts_y, 1) = ac_dec;
     crspa.nsi_dec(fts_y, 1) = nsi_dec;
     crspa.cei_dec(fts_y, 1) = cei_dec;
+end
+
+%% Calculate Equal Weighted Returns
+gpa_dec = crspa.gpa_dec;
+
+for d = 1:10
+    gpa_d = (gpa_dec == d);
+    for y = minyear:maxyear
+        fts_y = (year == y); 
+        gpa_d_y = gpa(gpa_d == 1 & fts_y == 1);
+        gpa_ret = mean(gpa_d_y);
+        anomalies.year = y
+        anomalies.gpa_ret(
+    end
 end
