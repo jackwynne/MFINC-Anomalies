@@ -1,0 +1,8 @@
+clear; clc; load('decile.mat');
+
+%% Correlations
+correl = sortrows(anomalies, 'year');
+long = correl(dec == 10, 1);
+short = correl(dec == 1,1 );
+
+gpa_lms = 
