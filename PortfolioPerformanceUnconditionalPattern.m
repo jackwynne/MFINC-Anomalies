@@ -69,3 +69,23 @@ for i = 1:11
     t.pv = stats(3);    t.errorVar = stats(4);
     ff5_reg = [ff5_reg; t];
 end
+
+% FF6 (FF5 + Momentum)
+x1 = ones(length(ff5.mkt_rf),1);
+ff6_reg = table;
+for i = 1:11
+    X1 = ff5.mkt_rf;    X2 = ff5.smb;    X3 = ff5.hml;
+    X4 = ff5.rmw;       X5 = ff5.cma;    X6 = fffw.umd(7:end,1);
+    X = [x1 X1 X2 X3 X4 X5 X6];
+    Y = lsdata(7:end,i);
+    t = table;
+    t.i = i;
+    [b,bint,r,rint,stats] = regress(Y, X);
+    t.a = b(1);         t.bMkt = b(2);      t.cSmb = b(3);
+    t.dHml = b(4);      t.eRmw = b(5);      t.fCma = b(6);
+    t.gUmd = b(7);
+    t.R2 = stats(1);    t.fStat = stats(2);
+    t.pv = stats(3);    t.errorVar = stats(4);
+    ff6_reg = [ff6_reg; t];
+end
+
