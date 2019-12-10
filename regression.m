@@ -10,3 +10,5 @@ lms.year = long.year;
 lms.gpa_lms = long.gpa_ret - short.gpa_ret;
 lms.ag_lms = long.ag_ret - short.ag_ret;
 
+%% Correlation
+corrcoef(lms.gpa_lms,lms.ag_lms)
