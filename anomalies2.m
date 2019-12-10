@@ -174,7 +174,7 @@ waitbar(a/ta)
 
 close(h2)
 
-save("crsp+an.mat");
+save("anomalies2.mat");
 % Save the output
 % save('Dataset_Compustat_2010_2018.mat','Compustat20102018','-append');
 %==========================================================================
