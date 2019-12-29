@@ -45,7 +45,8 @@ opts.Delimiter = ",";
 
 % Specify column names and types
 opts.VariableNames = ["year", "mkt_rf", "smb", "hml", "rf", "umd"];
-opts.VariableTypes = ["double", "double", "double", "double", "double", "double"];
+opts.VariableTypes = ["datetime", "double", "double", "double", "double", "double"];
+opts = setvaropts(opts, 1, "InputFormat", "yyyyMM");
 opts.ExtraColumnsRule = "ignore";
 opts.EmptyLineRule = "read";
 
