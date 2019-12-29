@@ -104,20 +104,20 @@ AnoLSS_filter = (AnoLSS.YYYYMM >= min(vix.Date)) + (AnoLSS.YYYYMM == datetime(19
 ff5f = ff5(ff5_filter == 1, :);
 fffwf = fffw(fffw_filter == 1, :);
 AnoLSSf = AnoLSS(AnoLSS_filter == 1, :);
-x1 = ones(height(vix),1);
+x1 = ones(length(vix
 for i = 1:11
     X1 = ff5f.mkt_rf;    X2 = ff5f.smb;    X3 = ff5f.hml;
     X4 = ff5f.rmw;       X5 = ff5f.cma;    X6 = fffwf.umd;
     X7 = vix.vxo;
     X = [x1 X1 X2 X3 X4 X5 X6 X7];
     col = (i*3)+1;
-    Y = table2array(AnoLSSf(:,col));
+    Y = AnoLSSf(:,col);
     t = table;
     t.i = i;
     [b,bint,r,rint,stats] = regress(Y, X);
     t.a = b(1);         t.bMkt = b(2);      t.cSmb = b(3);
     t.dHml = b(4);      t.eRmw = b(5);      t.fCma = b(6);
-    t.gUmd = b(7);      t.fVix = b(8);
+    t.gUmd = b(7);
     t.R2 = stats(1);    t.fStat = stats(2);
     t.pv = stats(3);    t.errorVar = stats(4);
     ff6vix_reg = [ff6vix_reg; t];
