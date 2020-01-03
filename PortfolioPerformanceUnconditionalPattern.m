@@ -1,37 +1,39 @@
 clear; clc; load('AnoLSS.mat');
 
-rf10 = rf.b10ret;
-lsdata = table2array(AnoLSS(:,2:end));
-zerod_data = AnoLSS(:,2:end);
-zerod_data{:,:}(isnan(zerod_data{:,:})) = 0;
-zdata = table2array(zerod_data(:,:));
-
 days = day(vix.Date);
 LastDayOfMonthIndex=[diff(days)]<0;
 LastDayOfMonthIndex(end) = 1;
 vix = vix(LastDayOfMonthIndex == 1,:);
 vix.Date = datetime(vix.Date,'Format', 'yyyyMM');
 
-%% 1.1 Excess Returns
-
-% Mean
-means = nanmean(lsdata);
-
-% Std Dev
-std_dev = nanstd(lsdata);
-
-% Correlation
-corrs = corr(zdata);
-
-% Sharpe Ratio
-sharpe = (lsdata - rf10) ./ std_dev;
-
-%% 1.2 Risk-Adjusted Returns
 filter = ones(height(vix),1);
 AnoLSS_filter = (AnoLSS.YYYYMM >= min(vix.Date)) + (AnoLSS.YYYYMM == datetime(1986,1,1));
 AnoLSSy = AnoLSS(AnoLSS_filter == 1, :);
 Anof = AnoLSSy(filter == 1, :);
 
+zerod_data = Anof(:,2:end);
+zerod_data{:,:}(isnan(zerod_data{:,:})) = 0;
+zdata = table2array(zerod_data(:,:));
+
+rf_filter = (rf.year >= min(vix.Date)) + (rf.year == datetime(1986,1,1));
+rfy = rf(rf_filter == 1, :);
+rff = rfy(filter == 1, :);
+
+%% 1.1 Excess Returns
+
+% Mean
+means = nanmean(Anof{:,2:end});
+
+% Std Dev
+std_dev = nanstd(Anof{:,2:end});
+
+% Correlation
+corrs = corr(zdata);
+
+% Sharpe Ratio
+sharpe = (Anof{:,2:end} - rff.b10ret) ./ std_dev;
+
+%% 1.2 Risk-Adjusted Returns
 ff3_filter = (ff3.year >= min(vix.Date)) + (ff3.year == datetime(1986,1,1));
 ff3y = ff3(ff3_filter == 1, :);
 ff3f = ff3y(filter == 1, :);
