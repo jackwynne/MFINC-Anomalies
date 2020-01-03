@@ -26,6 +26,19 @@ low_v_epu = prctile(epuy.compo_lag, 30);
 high_f_epu = epuy.compo_lag >= high_v_epu;
 low_f_epu = epuy.compo_lag <= low_v_epu;
 
+% Cut liquidity data to time
+liq_filter1 = (liq.year >= min(vix.Date)) + (liq.year == datetime(1986,1,1));
+liq_filter2 = liq.year <= max(vix.Date);
+liqy = liq(liq_filter1 == liq_filter2 == 1, :);
+
+% Create filters for high and low liquidity
+liqy.avg_lag = lagmatrix(liqy.avg_liq,1);
+high_v_liq = prctile(liqy.avg_lag, 70);
+low_v_liq = prctile(liqy.avg_lag, 30);
+high_f_liq = liqy.avg_lag >= high_v_liq;
+low_f_liq = liqy.avg_lag <= low_v_liq;
+
+% Run regressions
 [highvol_capm_reg, highvol_ff3_reg, highvol_ff5_reg, highvol_ff6_reg, highvol_ff6vix_reg]...
     = conditionalPattern(high_f_vol);
 [lowvol_capm_reg, lowvol_ff3_reg, lowvol_ff5_reg, lowvol_ff6_reg, lowvol_ff6vix_reg]...
@@ -36,6 +49,11 @@ low_f_epu = epuy.compo_lag <= low_v_epu;
 [lowepu_capm_reg, lowepu_ff3_reg, lowepu_ff5_reg, lowepu_ff6_reg, lowepu_ff6vix_reg]...
     = conditionalPattern(low_f_epu);
 
+[highliq_capm_reg, highliq_ff3_reg, highliq_ff5_reg, highliq_ff6_reg, highliq_ff6vix_reg]...
+    = conditionalPattern(high_f_liq);
+
+[lowliq_capm_reg, lowliq_ff3_reg, lowliq_ff5_reg, lowliq_ff6_reg, lowliq_ff6vix_reg]...
+    = conditionalPattern(low_f_liq);
 
 function [capm_reg, ff3_reg, ff5_reg, ff6_reg, ff6vix_reg] = conditionalPattern(filter)
     load('AnoLSS.mat');   

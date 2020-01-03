@@ -9,35 +9,62 @@ vix.Date = datetime(vix.Date,'Format', 'yyyyMM');
 
 % Create filters for high and low vol
 vix.vxo_lag = lagmatrix(vix.vxo,1);
-high_v = prctile(vix.vxo_lag, 70);
-low_v = prctile(vix.vxo_lag, 30);
-highf = vix.vxo_lag >= high_v;
-lowf = vix.vxo_lag <= low_v;
+high_val_vol = prctile(vix.vxo_lag, 70);
+low_v_vol = prctile(vix.vxo_lag, 30);
+high_f_vol = vix.vxo_lag >= high_val_vol;
+low_f_vol = vix.vxo_lag <= low_v_vol;
 
-%Filter EPU data
-epu_filter = (epu.year >= min(vix.Date)) + (epu.year == datetime(1986,1,1));
-AnoLSSy = AnoLSS(AnoLSS_filter == 1, :);
+% Cut EPU data to time
+epu_filter1 = (epu.year >= min(vix.Date)) + (epu.year == datetime(1986,1,1));
+epu_filter2 = epu.year <= max(vix.Date);
+epuy = epu(epu_filter1 == epu_filter2 == 1, :);
 
+% Create filters for high and low epu
+epuy.compo_lag = lagmatrix(epuy.compo,1);
+high_v_epu = prctile(epuy.compo_lag, 70);
+low_v_epu = prctile(epuy.compo_lag, 30);
+high_f_epu = epuy.compo_lag >= high_v_epu;
+low_f_epu = epuy.compo_lag <= low_v_epu;
+
+% Cut liquidity data to time
+liq_filter1 = (liq.year >= min(vix.Date)) + (liq.year == datetime(1986,1,1));
+liq_filter2 = liq.year <= max(vix.Date);
+liqy = liq(liq_filter1 == liq_filter2 == 1, :);
+
+% Create filters for high and low liquidity
+epuy.compo_lag = lagmatrix(epuy.compo,1);
+high_v_epu = prctile(epuy.compo_lag, 70);
+low_v_epu = prctile(epuy.compo_lag, 30);
+high_f_epu = epuy.compo_lag >= high_v_epu;
+low_f_epu = epuy.compo_lag <= low_v_epu;
+
+% Run regressions
 [highvol_capm_reg, highvol_ff3_reg, highvol_ff5_reg, highvol_ff6_reg, highvol_ff6vix_reg]...
-    = conditionalPattern(highf);
+    = conditionalPattern(high_f_vol);
 [lowvol_capm_reg, lowvol_ff3_reg, lowvol_ff5_reg, lowvol_ff6_reg, lowvol_ff6vix_reg]...
-    = conditionalPattern(lowf);
+    = conditionalPattern(low_f_vol);
+
+[highepu_capm_reg, highepu_ff3_reg, highepu_ff5_reg, highepu_ff6_reg, highepu_ff6vix_reg]...
+    = conditionalPattern(high_f_epu);
+[lowepu_capm_reg, lowepu_ff3_reg, lowepu_ff5_reg, lowepu_ff6_reg, lowepu_ff6vix_reg]...
+    = conditionalPattern(low_f_epu);
+
 
 function [capm_reg, ff3_reg, ff5_reg, ff6_reg, ff6vix_reg] = conditionalPattern(filter)
-load('AnoLSS.mat');   
-rf10 = rf.b10ret;
-lsdata = table2array(AnoLSS(:,2:end));
-zerod_data = AnoLSS(:,2:end);
-zerod_data{:,:}(isnan(zerod_data{:,:})) = 0;
-zdata = table2array(zerod_data(:,:));
+    load('AnoLSS.mat');   
+    rf10 = rf.b10ret;
+    lsdata = table2array(AnoLSS(:,2:end));
+    zerod_data = AnoLSS(:,2:end);
+    zerod_data{:,:}(isnan(zerod_data{:,:})) = 0;
+    zdata = table2array(zerod_data(:,:));
 
-% Adjustments to vix dataset for formatting
-days = day(vix.Date);
-LastDayOfMonthIndex=[diff(days)]<0;
-LastDayOfMonthIndex(end) = 1;
-vix = vix(LastDayOfMonthIndex == 1,:);
-vix.Date = datetime(vix.Date,'Format', 'yyyyMM');
-%% 1.1 Excess Returns
+    % Adjustments to vix dataset for formatting
+    days = day(vix.Date);
+    LastDayOfMonthIndex=[diff(days)]<0;
+    LastDayOfMonthIndex(end) = 1;
+    vix = vix(LastDayOfMonthIndex == 1,:);
+    vix.Date = datetime(vix.Date,'Format', 'yyyyMM');
+    %% 1.1 Excess Returns
 
     % Mean
     means = nanmean(lsdata);
