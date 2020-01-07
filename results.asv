@@ -1,0 +1,42 @@
+clear; clc; load('uncon.mat'); load('conpat.mat');
+
+names = AnoLSS.Properties.VariableNames;
+lssn = [];
+longn = [];
+shortn = [];
+for i = 1:11
+    col = (i*3)+1;  col1 = (i*3)-1;    col2 = (i*3); 
+    lssn = [lssn, names(:,col)];
+    longn = [longn, names{:,col1}];
+    shortn = [shortn, names{:,col2}];
+end
+
+res_ = [];
+for x = 1:11
+    estimate = transpose(ff6vix_reg{x}.Coefficients.Estimate);
+    pval = transpose(ff6vix_reg{x}.Coefficients.pValue);
+    
+volstats = [];
+for x = 1:11
+    means = [];
+    means = [means, highvol_stats{2}(x)];
+    means = [means, lowvol_stats{2}(x)];
+    means = [means, highvol_stats{3}(x)];
+    means = [means, lowvol_stats{3}(x)];
+    means = [means, highvol_stats{1}(x)];
+    means = [means, lowvol_stats{1}(x)];
+    
+    stdev = [];
+    stdev = [stdev, highvol_stats{5}(x)];
+    stdev = [stdev, lowvol_stats{5}(x)];
+    stdev = [stdev, highvol_stats{6}(x)];
+    stdev = [stdev, lowvol_stats{6}(x)];
+    stdev = [stdev, highvol_stats{4}(x)];
+    stdev = [stdev, lowvol_stats{4}(x)];
+    
+    volstats = vertcat(volstats, means);
+    %volstats = vertcat(volstats, stdev);
+end
+
+
+    
