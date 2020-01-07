@@ -20,18 +20,32 @@ rfy = rf(rf_filter == 1, :);
 rff = rfy(filter == 1, :);
 
 %% 1.1 Excess Returns
+lss = [];
+long = [];
+short = [];
+for i = 1:11
+    col = (i*3)+1;  col1 = (i*3)-1;    col2 = (i*3); 
+    lss = [lss, Anof{:,col}];
+    long = [long, Anof{:,col1}];
+    short = [short, Anof{:,col2}];
+end
 
 % Mean
-means = nanmean(Anof{:,2:end});
+lms_means = nanmean(lss);
+long_means = nanmean(long);
+short_means = nanmean(short);
 
 % Std Dev
-std_dev = nanstd(Anof{:,2:end});
+lms_stdev = nanstd(lss);
+long_stdev = nanstd(long);
+short_stdev = nanstd(short);
 
 % Correlation
-corrs = corr(zdata);
+corrs = corr(lss);
 
 % Sharpe Ratio
-sharpe = (Anof{:,2:end} - rff.b10ret) ./ std_dev;
+sharpe = (lss - rff.b10ret) ./ lms_stdev;
+avg_sharpe = nanmean(sharpe);
 
 %% 1.2 Risk-Adjusted Returns
 ff3_filter = (ff3.year >= min(vix.Date)) + (ff3.year == datetime(1986,1,1));
@@ -96,3 +110,5 @@ for i = 1:11
     mdl = fitlm(X, Y);
     ff6vix_reg{i} = mdl;   
 end
+
+save('uncon.mat');
