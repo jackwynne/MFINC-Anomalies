@@ -19,20 +19,11 @@ unconstats = vertcat(unconstats, short_stdev);
 unconstats = vertcat(unconstats, lms_stdev);
 unconstats = transpose(unconstats);
 
-res_ff6vix = [];
-rese_ff6vix = [];
-resp_ff6vix = [];
-for x = 1:11
-    estimate = transpose(ff6vix_reg{x}.Coefficients.Estimate);
-    pval = transpose(ff6vix_reg{x}.Coefficients.pValue);
-    res_ff6vix = vertcat(res_ff6vix, estimate);
-    rese_ff6vix = vertcat(rese_ff6vix, estimate);
-    resp_ff6vix = vertcat(resp_ff6vix, pval);
-end
-
-
-
-
+[res_capm, rese_capm, rest_capm] = unconres(capm_reg);
+[res_ff3, rese_ff3, rest_ff3] = unconres(ff3_reg);
+[res_ff5, rese_ff5, rest_ff5] = unconres(ff5_reg);
+[res_ff6, rese_ff6, rest_ff6] = unconres(ff6_reg);
+[res_ff6vix, rese_ff6vix, rest_ff6vix] = unconres(ff6vix_reg);
 
 
 res_vol_stats = [];
@@ -117,14 +108,27 @@ for x = 1:11
 end
 
 
-res_highv_ff6vix = [];
-rese_highv_ff6vix = [];
-resp_highv_ff6vix = [];
-for x = 1:11
-    estimate = transpose(highvol_ff6vix_reg{x}.Coefficients.Estimate);
-    pval = transpose(highvol_ff6vix_reg{x}.Coefficients.pValue);
-    res_highv_ff6vix = vertcat(res_highv_ff6vix, estimate);
-    rese_highv_ff6vix = vertcat(rese_highv_ff6vix, estimate);
-    resp_highv_ff6vix = vertcat(resp_highv_ff6vix, pval);
-end
+% res_highv_ff6vix = [];
+% rese_highv_ff6vix = [];
+% resp_highv_ff6vix = [];
+% for x = 1:11
+%     estimate = transpose(highvol_ff6vix_reg{x}.Coefficients.Estimate);
+%     pval = transpose(highvol_ff6vix_reg{x}.Coefficients.pValue);
+%     res_highv_ff6vix = vertcat(res_highv_ff6vix, estimate);
+%     rese_highv_ff6vix = vertcat(rese_highv_ff6vix, estimate);
+%     resp_highv_ff6vix = vertcat(resp_highv_ff6vix, pval);
+% end
     
+function [res, rese, rest] = unconres(mdl)
+    res = [];
+    rese = [];
+    rest = [];
+    for x = 1:11
+        estimate = transpose(mdl{x}.Estimate);
+        tstat = transpose(mdl{x}.tStat);
+        res = vertcat(res, estimate);
+        res = vertcat(res, tstat);
+        rese = vertcat(rese, estimate);
+        rest = vertcat(rest, tstat);
+    end
+end

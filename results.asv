@@ -19,18 +19,33 @@ unconstats = vertcat(unconstats, short_stdev);
 unconstats = vertcat(unconstats, lms_stdev);
 unconstats = transpose(unconstats);
 
-res_ff6vix = [];
-rese_ff6vix = [];
-resp_ff6vix = [];
+res_capm = [];
+rese_capm = [];
+rest_capm = [];
 for x = 1:11
-    estimate = transpose(ff6vix_reg{x}.Coefficients.Estimate);
-    pval = transpose(ff6vix_reg{x}.Coefficients.pValue);
-    res_ff6vix = vertcat(res_ff6vix, estimate);
-    rese_ff6vix = vertcat(rese_ff6vix, estimate);
-    resp_ff6vix = vertcat(resp_ff6vix, pval);
+    estimate = transpose(capm_reg{x}.Estimate);
+    tstat = transpose(capm_reg{x}.tStat);
+    res_capm = vertcat(res_capm, estimate);
+    res_capm = vertcat(res_capm, tstat);
+    rese_capm = vertcat(rese_capm, estimate);
+    rest_capm = vertcat(rest_capm, tstat);
 end
 
+res_ff3 = [];
+rese_ff3 = [];
+rest_ff3 = [];
 
+
+res_ff6vix = [];
+rese_ff6vix = [];
+rest_ff6vix = [];
+for x = 1:11
+    estimate = transpose(ff6vix_reg{x}.Estimate);
+    tstat = transpose(ff6vix_reg{x}.tStat);
+    res_ff6vix = vertcat(res_ff6vix, estimate);
+    rese_ff6vix = vertcat(rese_ff6vix, estimate);
+    rest_ff6vix = vertcat(rest_ff6vix, tstat);
+end
 
 
 
@@ -89,42 +104,52 @@ for x = 1:11
     res_epu_stats_stdev = vertcat(res_epu_stats_stdev, stdev);
 end
 
-res_li_stats = [];
-res_epu_stats_mean = [];
-res_epu_stats_stdev = [];
+res_liq_stats = [];
+res_liq_stats_mean = [];
+res_liq_stats_stdev = [];
 for x = 1:11
     means = [];
-    means = [means, highepu_stats{2}(x)];
-    means = [means, lowepu_stats{2}(x)];
-    means = [means, highepu_stats{3}(x)];
-    means = [means, lowepu_stats{3}(x)];
-    means = [means, highepu_stats{1}(x)];
-    means = [means, lowepu_stats{1}(x)];
+    means = [means, highliq_stats{2}(x)];
+    means = [means, lowliq_stats{2}(x)];
+    means = [means, highliq_stats{3}(x)];
+    means = [means, lowliq_stats{3}(x)];
+    means = [means, highliq_stats{1}(x)];
+    means = [means, lowliq_stats{1}(x)];
     
     stdev = [];
-    stdev = [stdev, highepu_stats{5}(x)];
-    stdev = [stdev, lowepu_stats{5}(x)];
-    stdev = [stdev, highepu_stats{6}(x)];
-    stdev = [stdev, lowepu_stats{6}(x)];
-    stdev = [stdev, highepu_stats{4}(x)];
-    stdev = [stdev, lowepu_stats{4}(x)];
+    stdev = [stdev, highliq_stats{5}(x)];
+    stdev = [stdev, lowliq_stats{5}(x)];
+    stdev = [stdev, highliq_stats{6}(x)];
+    stdev = [stdev, lowliq_stats{6}(x)];
+    stdev = [stdev, highliq_stats{4}(x)];
+    stdev = [stdev, lowliq_stats{4}(x)];
     
-    res_epu_stats = vertcat(res_epu_stats, means);
-    res_epu_stats = vertcat(res_epu_stats, stdev);
+    res_liq_stats = vertcat(res_liq_stats, means);
+    res_liq_stats = vertcat(res_liq_stats, stdev);
 
-    res_epu_stats_mean = vertcat(res_epu_stats_mean, means);
-    res_epu_stats_stdev = vertcat(res_epu_stats_stdev, stdev);
+    res_liq_stats_mean = vertcat(res_liq_stats_mean, means);
+    res_liq_stats_stdev = vertcat(res_liq_stats_stdev, stdev);
 end
 
 
-res_highv_ff6vix = [];
-rese_highv_ff6vix = [];
-resp_highv_ff6vix = [];
-for x = 1:11
-    estimate = transpose(highvol_ff6vix_reg{x}.Coefficients.Estimate);
-    pval = transpose(highvol_ff6vix_reg{x}.Coefficients.pValue);
-    res_highv_ff6vix = vertcat(res_highv_ff6vix, estimate);
-    rese_highv_ff6vix = vertcat(rese_highv_ff6vix, estimate);
-    resp_highv_ff6vix = vertcat(resp_highv_ff6vix, pval);
-end
+% res_highv_ff6vix = [];
+% rese_highv_ff6vix = [];
+% resp_highv_ff6vix = [];
+% for x = 1:11
+%     estimate = transpose(highvol_ff6vix_reg{x}.Coefficients.Estimate);
+%     pval = transpose(highvol_ff6vix_reg{x}.Coefficients.pValue);
+%     res_highv_ff6vix = vertcat(res_highv_ff6vix, estimate);
+%     rese_highv_ff6vix = vertcat(rese_highv_ff6vix, estimate);
+%     resp_highv_ff6vix = vertcat(resp_highv_ff6vix, pval);
+% end
     
+function [] = unconres()
+    for x = 1:11
+        estimate = transpose(ff3_reg{x}.Estimate);
+        tstat = transpose(ff3_reg{x}.tStat);
+        res_ff3 = vertcat(res_ff3, estimate);
+        res_ff3 = vertcat(res_ff3, tstat);
+        rese_ff3 = vertcat(rese_ff3, estimate);
+        rest_ff3 = vertcat(rest_ff3, tstat);
+    end
+end
