@@ -55,6 +55,8 @@ low_f_liq = liqy.avg_lag <= low_v_liq;
 [lowliq_stats, lowliq_capm_reg, lowliq_ff3_reg, lowliq_ff5_reg, lowliq_ff6_reg, lowliq_ff6vix_reg]...
     = conditionalPattern(low_f_liq);
 
+save('conpat.mat');
+
 function [stats, capm_reg, ff3_reg, ff5_reg, ff6_reg, ff6vix_reg] = conditionalPattern(filter)
     load('AnoLSS.mat');
     
@@ -79,22 +81,39 @@ function [stats, capm_reg, ff3_reg, ff5_reg, ff6_reg, ff6vix_reg] = conditionalP
     
     %% 1.1 Excess Returns
 
+    lss = [];
+    long = [];
+    short = [];
+    for i = 1:11
+        col = (i*3)+1;  col1 = (i*3)-1;    col2 = (i*3); 
+        lss = [lss, Anof{:,col}];
+        long = [long, Anof{:,col1}];
+        short = [short, Anof{:,col2}];
+    end
+
     % Mean
-    means = nanmean(Anof{:,2:end});
+    lms_means = nanmean(lss);
+    long_means = nanmean(long);
+    short_means = nanmean(short);
 
     % Std Dev
-    std_dev = nanstd(Anof{:,2:end});
+    lms_stdev = nanstd(lss);
+    long_stdev = nanstd(long);
+    short_stdev = nanstd(short);
 
     % Correlation
-    corrs = corr(zdata);
+    corrs = corr(lss);
 
     % Sharpe Ratio
-    sharpe = (Anof{:,2:end} - rff.b10ret) ./ std_dev;
+    sharpe = (lss - rff.b10ret) ./ lms_stdev;
+    avg_sharpe = nanmean(sharpe);
     
-    stats{1} = means;
-    stats{2} = std_dev;
-    stats{3} = corrs;
-    stats{4} = sharpe;
+    stats{1} = lms_means;
+    stats{2} = long_means;
+    stats{3} = short_means;
+    stats{4} = lms_stdev;
+    stats{5} = long_stdev;
+    stats{6} = short_stdev;
     
     %% 1.2 Risk-Adjusted Returns    
     ff3_filter = (ff3.year >= min(vix.Date)) + (ff3.year == datetime(1986,1,1));
