@@ -35,7 +35,9 @@ end
 
 
 
-volstats = [];
+res_vol_stats = [];
+res_vol_stats_mean = [];
+res_vol_stats_stdev = [];
 for x = 1:11
     means = [];
     means = [means, highvol_stats{2}(x)];
@@ -53,8 +55,65 @@ for x = 1:11
     stdev = [stdev, highvol_stats{4}(x)];
     stdev = [stdev, lowvol_stats{4}(x)];
     
-    volstats = vertcat(volstats, means);
-    %volstats = vertcat(volstats, stdev);
+    res_vol_stats = vertcat(res_vol_stats, means);
+    res_vol_stats = vertcat(res_vol_stats, stdev);
+
+    res_vol_stats_mean = vertcat(res_vol_stats_mean, means);
+    res_vol_stats_stdev = vertcat(res_vol_stats_stdev, stdev);
+end
+
+res_epu_stats = [];
+res_epu_stats_mean = [];
+res_epu_stats_stdev = [];
+for x = 1:11
+    means = [];
+    means = [means, highepu_stats{2}(x)];
+    means = [means, lowepu_stats{2}(x)];
+    means = [means, highepu_stats{3}(x)];
+    means = [means, lowepu_stats{3}(x)];
+    means = [means, highepu_stats{1}(x)];
+    means = [means, lowepu_stats{1}(x)];
+    
+    stdev = [];
+    stdev = [stdev, highepu_stats{5}(x)];
+    stdev = [stdev, lowepu_stats{5}(x)];
+    stdev = [stdev, highepu_stats{6}(x)];
+    stdev = [stdev, lowepu_stats{6}(x)];
+    stdev = [stdev, highepu_stats{4}(x)];
+    stdev = [stdev, lowepu_stats{4}(x)];
+    
+    res_epu_stats = vertcat(res_epu_stats, means);
+    res_epu_stats = vertcat(res_epu_stats, stdev);
+
+    res_epu_stats_mean = vertcat(res_epu_stats_mean, means);
+    res_epu_stats_stdev = vertcat(res_epu_stats_stdev, stdev);
+end
+
+res_liq_stats = [];
+res_liq_stats_mean = [];
+res_liq_stats_stdev = [];
+for x = 1:11
+    means = [];
+    means = [means, highliq_stats{2}(x)];
+    means = [means, lowliq_stats{2}(x)];
+    means = [means, highliq_stats{3}(x)];
+    means = [means, lowliq_stats{3}(x)];
+    means = [means, highliq_stats{1}(x)];
+    means = [means, lowliq_stats{1}(x)];
+    
+    stdev = [];
+    stdev = [stdev, highliq_stats{5}(x)];
+    stdev = [stdev, lowliq_stats{5}(x)];
+    stdev = [stdev, highliq_stats{6}(x)];
+    stdev = [stdev, lowliq_stats{6}(x)];
+    stdev = [stdev, highliq_stats{4}(x)];
+    stdev = [stdev, lowliq_stats{4}(x)];
+    
+    res_liq_stats = vertcat(res_liq_stats, means);
+    res_liq_stats = vertcat(res_liq_stats, stdev);
+
+    res_liq_stats_mean = vertcat(res_liq_stats_mean, means);
+    res_liq_stats_stdev = vertcat(res_liq_stats_stdev, stdev);
 end
 
 
