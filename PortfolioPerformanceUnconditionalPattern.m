@@ -58,7 +58,8 @@ for i = 1:11
     col = (i*3)+1;
     Y = table2array(Anof(:,col));
     mdl = fitlm(X, Y);
-    capm_reg{i} = mdl;
+    nw = newy(mdl, X, Y);
+    capm_reg{i} = nw;
 end
 
 %FF3
@@ -68,7 +69,8 @@ for i = 1:11
     col = (i*3)+1;
     Y = table2array(Anof(:,col));
     mdl = fitlm(X, Y);
-    ff3_reg{i} = mdl;
+    nw = newy(mdl, X, Y);
+    ff3_reg{i} = nw;
 end
 
 ff5_filter = (ff5.year >= min(vix.Date)) + (ff5.year == datetime(1986,1,1));
@@ -82,7 +84,8 @@ for i = 1:11
     col = (i*3)+1;
     Y = table2array(Anof(:,col));
     mdl = fitlm(X, Y);
-    ff5_reg{i} = mdl; 
+    nw = newy(mdl, X, Y);
+    ff5_reg{i} = nw; 
 end
 
 fffw_filter = (fffw.year >= min(vix.Date)) + (fffw.year == datetime(1986,1,1));
@@ -96,7 +99,8 @@ for i = 1:11
     col = (i*3)+1;
     Y = table2array(Anof(:,col));
     mdl = fitlm(X, Y);
-    ff6_reg{i} = mdl; 
+    nw = newy(mdl, X, Y);
+    ff6_reg{i} = nw; 
 end
 
 % FF6 + VIX
@@ -108,7 +112,29 @@ for i = 1:11
     col = (i*3)+1;
     Y = table2array(Anof(:,col));
     mdl = fitlm(X, Y);
-    ff6vix_reg{i} = mdl;   
+    nw = newy(mdl, X, Y);
+    ff6vix_reg{i} = nw;   
 end
 
 save('uncon.mat');
+
+function [Coefficients_NW] = newy(mdl,x, y)
+    % Calculate the lag selection parameter for the standard Newey-West HAC 
+    % estimate (Andrews and Monohan, 1992).
+    T = length(y);  maxLag = floor(4*(T/100)^(2/9));  clear T; 
+
+    % Estimate the standard Newey-West OLS coefficient covariance using hac by 
+    % setting the bandwidth to maxLag + 1. Display the OLS coefficient estimates,
+    % their standard errors, and the covariance matrix.
+    EstCov = hac(x,y,'bandwidth',maxLag+1, 'display', 'off');
+
+    NWSE = sqrt(diag(EstCov));      
+    Estimate = table2array(mdl.Coefficients(:,1));   % OLS coefficients
+    tStat = Estimate./NWSE;                          % Newey West t-stats.
+    % Calculate the p-value using the t-stats and the degree of freedom
+    df = length(y) - length(Estimate);  % degree of freedom
+    pValue = 2*(1-tcdf(abs(tStat),df));
+    % Save the output in a table; 
+    Coefficients_NW = table(Estimate,NWSE,tStat,pValue); 
+    clear Estimate NWSE tStat pValue df; 
+end

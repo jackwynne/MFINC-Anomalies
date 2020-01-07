@@ -1,16 +1,5 @@
 clear; clc; load('AnoLSS.mat');
 
-names = AnoLSS.Properties.VariableNames;
-lssn = [];
-longn = [];
-shortn = [];
-for i = 1:11
-    col = (i*3)+1;  col1 = (i*3)-1;    col2 = (i*3); 
-    lssn = [lssn, names(:,col)];
-    longn = [longn, names{:,col1}];
-    shortn = [shortn, names{:,col2}];
-end
-
 days = day(vix.Date);
 LastDayOfMonthIndex=[diff(days)]<0;
 LastDayOfMonthIndex(end) = 1;
@@ -122,4 +111,6 @@ for i = 1:11
     ff6vix_reg{i} = mdl;   
 end
 
-save(
+save('uncon.mat');
+
+function [NW] = newywest(
