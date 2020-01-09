@@ -46,7 +46,9 @@ unconstats = transpose(unconstats);
 [res_liq_ff5, rese_liq_ff5, rest_liq_ff5] = conres(highliq_ff5_reg, lowliq_ff5_reg);
 [res_liq_ff6, rese_liq_ff6, rest_liq_ff6] = conres(highliq_ff6_reg, lowliq_ff6_reg);
 [res_liq_ff6vix, rese_liq_ff6vix, rest_liq_ff6vix] = conres(highliq_ff6vix_reg, lowliq_ff6vix_reg);
-    
+
+save('results.mat');
+
 function [res, rese, rest] = unconres(mdl)
     res = [];
     rese = [];
