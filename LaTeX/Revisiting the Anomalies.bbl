@@ -1,0 +1,23 @@
+\begin{thebibliography}{}
+
+\bibitem[Chu et~al., 2017]{chu2017causal}
+Chu, Y., Hirshleifer, D., and Ma, L. (2017).
+\newblock The causal effect of limits to arbitrage on asset pricing anomalies.
+\newblock Technical report, National Bureau of Economic Research.
+
+\bibitem[Fama and French, 1993]{fama1993common}
+Fama, E.~F. and French, K.~R. (1993).
+\newblock Common risk factors in the returns on stocks and bonds.
+\newblock {\em Journal of financial economics}, 33(1):3--56.
+
+\bibitem[Novy-Marx, 2013]{novy2013other}
+Novy-Marx, R. (2013).
+\newblock The other side of value: The gross profitability premium.
+\newblock {\em Journal of Financial Economics}, 108(1):1--28.
+
+\bibitem[Stambaugh et~al., 2012]{stambaugh2012short}
+Stambaugh, R.~F., Yu, J., and Yuan, Y. (2012).
+\newblock The short of it: Investor sentiment and anomalies.
+\newblock {\em Journal of Financial Economics}, 104(2):288--302.
+
+\end{thebibliography}
