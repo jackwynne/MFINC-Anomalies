@@ -1,5 +1,10 @@
 \begin{thebibliography}{}
 
+\bibitem[Baker et~al., 2016]{baker2016measuring}
+Baker, S.~R., Bloom, N., and Davis, S.~J. (2016).
+\newblock Measuring economic policy uncertainty.
+\newblock {\em The quarterly journal of economics}, 131(4):1593--1636.
+
 \bibitem[Chu et~al., 2017]{chu2017causal}
 Chu, Y., Hirshleifer, D., and Ma, L. (2017).
 \newblock The causal effect of limits to arbitrage on asset pricing anomalies.
@@ -14,6 +19,16 @@ Fama, E.~F. and French, K.~R. (1993).
 Novy-Marx, R. (2013).
 \newblock The other side of value: The gross profitability premium.
 \newblock {\em Journal of Financial Economics}, 108(1):1--28.
+
+\bibitem[Ohlson, 1980]{ohlson1980financial}
+Ohlson, J.~A. (1980).
+\newblock Financial ratios and the probabilistic prediction of bankruptcy.
+\newblock {\em Journal of accounting research}, pages 109--131.
+
+\bibitem[P{\'a}stor and Stambaugh, 2003]{pastor2003liquidity}
+P{\'a}stor, L. and Stambaugh, R.~F. (2003).
+\newblock Liquidity risk and expected stock returns.
+\newblock {\em Journal of Political economy}, 111(3):642--685.
 
 \bibitem[Stambaugh et~al., 2012]{stambaugh2012short}
 Stambaugh, R.~F., Yu, J., and Yuan, Y. (2012).

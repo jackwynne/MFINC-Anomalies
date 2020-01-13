@@ -2,6 +2,8 @@
 \usepackage{booktabs}
 \usepackage{graphicx}
 \usepackage{natbib}
+\usepackage{breqn}
+
 \begin{document}                        % Document starts here
 \title{Revisiting the Anomalies }
 \author{Jack Wynne}
@@ -49,51 +51,78 @@ Campbell, Hilscher and Szilagyi (2008) depict the relationship between the deter
 Dichev (1998) breaks down the relationship between bankruptcy risk and returns. Bankruptcy risk acts as a proxy for firm distress, which previous studies suggest could be behind the size and book-to-market effects. A positive association between bankruptcy risk and returns would indicate that bankruptcy risk is systematic. However, Dichev finds that that firms with a high risk of bankruptcy earn lower returns, meaning that distress is unlikely to account for the size or book-to-market effects. 
 
 \section{Data: Anomalies, Volatility, Economic Policy Uncertainty and Liquidity}
-\subsubsection{Anomalies: Data Gathering and Variable Construction}
+\subsection{Anomalies: Data Gathering and Variable Construction}
 This research explores the eleven previously documented anomalies which still exist even after exposure to the three factors set out by~\cite{fama1993common}. As noted by~\cite{stambaugh2012short}, the use of the Fama and French three factor model rather than the capital asset pricing model (CAPM) as a hurdle is important because just using the CAPM would create an inordinately broad set of anomalies to be tested. 
 
 To calculate the anomalies, CRSP data will be obtained from Wharton Research Data Services (WRDS). The dataset will cover the firms on the S\&P 500 index starting in 1974 and running through to 2018. How the construction is undertaken is outlined below and is based on~\cite{chu2017causal}.
 
-\subsubsection*{Anomaly One: Momentum}
+\paragraph*{Anomaly One: Momentum}
 The calculation of momentum uses the conventional 11 month ranking period \((t-12 \quad to \quad t-2)\) followed by a one month skip $(t-1)$ and then a one month holding period $(t)$. The skipped month is used to avoid short-run reversal effects.
 
-\subsubsection*{Anomaly Two: Gross Profitability}
+\paragraph*{Anomaly Two: Gross Profitability}
 In line with~\cite{novy2013other}, gross profitability will be calculated as total revenue less the cost of goods sold \((REVT_t-COGS_t)\), scaled by the value of total assets $(AT_t)$. 
 
-\subsubsection*{Anomaly Three: Asset Growth}
+\paragraph*{Anomaly Three: Asset Growth}
 Asset growth is calculated as the change in total assets \((AT_t  - AT_{t-1})\) and is scaled by lagged total assets \((AT_{t-1})\).
 
-\subsubsection*{Anomaly Four: Investment to Assets}
+\paragraph*{Anomaly Four: Investment to Assets}
 The investment to assets anomaly is calculated as the annual change in gross property, plant and equipment and inventories, again this is scaled by lagged total assets \((AT_{t-1})\). 
 
-\subsubsection*{Anomaly Five: Return on Assets}
+\paragraph*{Anomaly Five: Return on Assets}
 Return on assets is measured as quarterly earnings scaled by total quarterly assets. 
 
-\subsubsection*{Anomaly Six: Net Operating Assets}
+\paragraph*{Anomaly Six: Net Operating Assets}
 To estimate the net operating assets, the difference between all operating assets and all operating liabilities is calculated and then scaled by lagged total assets.
 \[
 NOA= \frac{Operating Asset_t-Operating Liabilities_t}{AT_{t-1}}\]
 
-\subsubsection*{Anomaly Seven: Accruals}
+\paragraph*{Anomaly Seven: Accruals}
 The accrual anomaly is calculated as the changes in non-cash working capital less depreciation expenditure and scaled by lagged total assets.
-\[
-Accrualst = \frac{(\Delta Current Assets - \Delta Cash) - (\Delta Current Liabilities -\Delta Short Term Debt-\Delta Taxes Payable)-Depn \& Amort Exp)}{AT_{t-1}}
-\]
+    \begin{dmath*}
+        Accruals_t = \frac{(\Delta CA - \Delta Cash) - (\Delta CL -\Delta STD -\Delta TP)-DAE)}{AT_{t-1}}
+    \end{dmath*}
 
-\subsubsection*{Anomaly Eight: Net Stock Issues}
+\paragraph*{Anomaly Eight: Net Stock Issues}
 To measure the anomaly on an annual basis, the change in the natural logarithm of a firm’s adjusted shares over the previous year. 
 \[
 NSI_t = \ln (Adjusted \ Shares_t ) - \ln ( Adjusted \ Shares_{t-1})
 \]
 
-\subsubsection*{Anomaly Nine: Composite Equity Issues}
+\paragraph*{Anomaly Nine: Composite Equity Issues}
 The composite equity measure decreases because of share repurchases, dividends and any other actions that remove cash from the firm. 
 \[
-CEI_t = \ln (\frac{Me_t}{Me_{t-5}})  – r(t – 5,t)
+CEI_t = \ln (\frac{Me_t}{Me_{t-5}})  - r(t - 5,t)
 \]
 
-\subsubsection*{Anomaly}
-\subsubsection*{Anomaly}
+\paragraph*{Anomaly Ten: Failure Probability }
+A dynamic logit model that matches empirically observed default events using both market and accounting information is used as a measure of failure probability. 
+    \begin{dmath*}
+        FP_t  =  - 9.16 - 20.26 NIMTAAVG_t+ 1.42 TLMTA_t  - 7.13 EXRETAVG_t + 1.41 SIGMA_t  - 0.045 RSIZE_t - 2.13 CASHMTA_t + 0.075 MB_t - 0.058 PRICE_t
+    \end{dmath*}
+
+\paragraph*{Anomaly Eleven: O-Score}
+Another measure of financial distress is the O-score proposed by\cite{ohlson1980financial}.
+
+    \begin{dmath*}
+        OS_t= - 1.32 - 0.407 \log (ADJASSET_t )  + 6.03 TLTA_t- 1.43 WCTA_t+ 0.076 CLCA_t- 1.72O ENEG_t- 2.37 NITA_t- 1.83 FUTL_t+ 0.285 INTWO_t- 0.521 CHIN_t
+    \end{dmath*}
+
+\subsubsection{Anomaly Long-Short Portfolios}
+For each of the eleven anomalies, all of the stocks are sorted from best to worst and split into decile portfolios. Value weighted returns are calculated for each decile portfolio. A long-short strategy is implemented using the best and worst deciles, going long on the high performing decile and short on the worst performing decile. 
+
+\subsection{Additional Data}
+\subsubsection{Fama French Factor Data}
+To thoroughly investigate how much of the excess returns of the anomaly factors are being driven by the aggregate volatility risk factor return generated by the Fama and French factors needs to be ruled out. Data from the Kenneth R. French data library is the source used for Fama and Fench factor data. The Fama and French three-factor (FF3) data set contain the excess return on the market factor $(Rm - Rf)$, the size factor (SMB) and the value factor (HML). The Fama and French five-factor (FF5) data set contain the same factors as the FF3 dataset with the addition of the profitability factor (RMW) and the investment factor (CMA). The momentum factor data, used in the six-factor model, is sourced from WRDS.
+
+\subsubsection{Volatility Data}
+The measure of aggregate volatility used for this research is the Chicago Board Options Exchange (CBOE) volatility index (VXO). The VXO is a measure of implied volatility calculated using the 30-day S\&P 100 index (OEX). The VXO index was chosen over the newer VIX index, which is calculated using the S\&P 500 index, because the VXO has a more extended data range and the is highly correlated with the VIX. Price data for the VXO was taken from WRDS.
+
+\subsubsection{Economic Uncertainty Data}
+The index for economic policy uncertainty (EPU) was developed by\cite{baker2016measuring} and is constructed from three components. The first component is an analysis of the economic sentiment of ten large US-based newspapers. The second component looks at the number of federal tax code provisions set to expire in the next ten years, based on reports from the Congressional Budget Office. The final component looks at the level of disagreement between professional economic forecasters, utilising data from the Federal Reserve Bank of Philadelphia's Survey of Professional Forecasters.
+
+\subsubsection{Market Liquidity Data}
+As a proxy for market liquidity\cite{pastor2003liquidity}'s aggregated, liquidity index is used. 
+
 
 \section{Portfolio Performance: Unconditional Pattern}
 \subsection{Excess Return }
