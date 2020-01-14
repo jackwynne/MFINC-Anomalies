@@ -1,10 +1,385 @@
-@article{pastor2003liquidity,
-  title={Liquidity risk and expected stock returns},
-  author={P{\'a}stor, L'ubo{\v{s}} and Stambaugh, Robert F},
-  journal={Journal of Political economy},
-  volume={111},
-  number={3},
-  pages={642--685},
-  year={2003},
-  publisher={The University of Chicago Press}
+\documentclass[a4paper]{article}                 % Tell LaTeX to use the "article" style
+\usepackage{booktabs}
+\usepackage{multirow}
+\usepackage{graphicx}
+\usepackage{natbib}
+\usepackage[font=scriptsize,labelfont=bf,labelsep=none]{caption}
+\usepackage{titlesec}
+\newcommand{\sectionbreak}{\clearpage}
+\usepackage{breqn}
+
+\begin{document}                        % Document starts here
+\title{Revisiting the Anomalies }
+\author{Jack Wynne}
+\date{January 2020}
+\maketitle
+\section{Introduction}
+\section{Literature Review}
+\subsection{Stocks with Extreme Past Returns: Lotteries or Insurance?}
+In his 2018 paper, Barinov investigates the relationship between stocks with lottery-like returns and market volatility. A stock that offers a small chance of having a vast payoff is said to be lottery-like. Lottery-like stocks also tend to be growth stocks and have high idiosyncratic volatility. In his earlier work, Barinov has shown that growth stocks with high idiosyncratic volatility act as hedges against aggregate volatility risk and therefore, lottery-like stocks should also act as hedges against aggregate volatility risk. The ability for growth and lottery stocks to act as hedges against aggregate volatility risk comes from the way that growth options react positively to increases in volatility and that growth options will suffer a smaller price drop, due to a more modest increase in the options risk and discount rate, when market volatility and risk premiums increase. 
+Barinov’s empirical analysis starts by showing that firms that have had previous extreme returns and firms with significant expected idiosyncratic skewness have the conditions required for the aggregate volatility explanation, which are high idiosyncratic volatility and firm-specific uncertainty. Next, Barinov creates an aggregate volatility risk factor (FVIX) based on the daily changes in the VIX index. The VIX index is the implied volatility of the options on the S\&P 500 index and is generally used as a measure of expected aggregate volatility. 
+The paper hypothesises that convexity in the firm value is how the aggregate volatility risk explanation of the low returns for lottery-like stocks works. Barinov predicts that the skewness and maximum effects will be higher for growth stocks and that the reason behind this is aggregate volatility risk. In testing, the author finds that the maximum and skewness effects are roughly 60bps per month higher for growth stocks than value stocks. Adding the control of the volatility risk factor (FVIX) the difference falls to 20bps per month, irrespective of which other of the common models are added as controls. Also, the growth like lottery stocks loads more on the FVIX factor than on the value lottery-like stocks. 
+
+\subsection{The Short of It: Investor Sentiment and Anomalies}
+Stambaugh, Yu and Yuan explore how investor sentiment affects stock pricing, through a market-wide component with the potential to influence the prices of many securities in the same direction at the same time and the impediment to short selling. This paper looks at whether investor sentiment provides a partial explanation of the asset pricing anomalies that persist after taking the three Fama and French (1993) factors into account.
+Following high sentiment, the anomalies should be stronger is the first of three hypotheses that the paper investigates. The second is that when sentiment is high, the returns on the short leg of the portfolios for each anomaly should be lower. Finally, investor sentiment should not affect the long leg of each anomaly portfolio. 
+The paper finds that each anomaly is stronger following high investor sentiment levels. The strength of the relationship is shown in an average of 70% of benchmark adjusted profits from a long-short strategy occur in the following months where investor sent investor sentiment was above the median levels and in time series regressions which show a significant positive relationship between investor sentiment and the long-short anomaly portfolio. 
+Regarding the second hypothesis, the paper finds that the return in the short leg of the portfolio is lower following high sentiment months. Time series regression shows a significant negative relationship between investor sentiment and the returns on the short leg of the portfolio.
+Finally, the paper finds that sentiment does not affect the long leg returns. None of the eleven portfolios has a significant difference in the long legs returns between high and low sentiment periods. In a time-series regression, it is confirmed that there is no relationship between benchmark adjusted long leg returns and the sentiment of investors.
+
+\subsection{The Causal Effect of Limits to Arbitrage on Asset Pricing Anomalies}
+In this paper by Chu, Hirshleifer and Ma, they investigate if the return anomalies exist, concerning mispricing, because limits to arbitrage prevent sophisticated investors from profitably trading against them. As a result of the difficulty to purely measure the variations in the limits to arbitrage while excluding changes in other forces that may have an impact on the risk premium or mispricing, the paper studies the causal effects of restrictions to arbitrage on the eleven common pricing anomalies. One of the critical limits to arbitrage is short-sale constraints. The paper uses a pilot program run by the Securities and Exchange Commission on a subset of the stocks on the NYSE, AMEX and NASDAQ that removed short sale price tests that made it easier to short-sell stocks that were in the pilot group. 
+Chu, Hirshlefier and Ma examine two hypotheses concerning the differing performance of firms in the pilot versus firms not in the pilot. The first hypothesis is that for the firms in the pilot, the effect of the pricing anomalies should be weaker relative to firms not in the pilot. To test the first hypothesis, the authors split the pilot and nonpilot firms and construct long-short portfolios. In five of the eleven anomalies, the effect of the anomaly is significantly weaker.
+The second hypothesis is that the short leg of the portfolios is responsible for the decrease in anomaly returns for pilot stocks during the pilot period. Using the same long-short framework, the short leg portfolios were significantly less profitable. In contrast to the decrease in short leg profitability, the profitability of the long leg did not see any significant effects.
+
+\subsection{Additional Literature Relating to the Pricing Anomalies}
+This subsection provides an outline of each of the papers which provided the initial insights into the anomalies that are studied.
+
+Jegadeesh and Titman (1993) look at a strategy that buys stocks that have strong past performance and shorts stocks that have had poor recent performance. Using this momentum strategy, the authors generate significant positive returns with holding periods ranging from 3 months to a year. The returns that are generated in the 12 months after the portfolio is formed disappear in the 24 months that follow. Additionally, the authors note that the profitability of this strategy is not due to systematic risk or a result of a delay in stock price reactions to common factors. 
+
+Novy-Marx (2013) finds that gross profit to assets has approximately the same power as the book-to-market ratio in predicting the cross-section on average returns. Despite having significantly higher valuations, profitable firms generate substantially higher returns than their unprofitable counterparts. The author also finds that controlling for gross profitability also drastically increases the returns from a value strategy and that the effect is especially potent for large firms who have highly liquid stocks. 
+Cooper, Gulen and Schill (2008) describe how firm-level asset investment generates subsequent stock returns by examining the relationship between asset growth and returns. The authors find that the growth of a firm's assets is a strong predictor of future abnormal returns and that this effect is not dependent on the size of the firm. 
+
+Titman, Wei and Xie (2004) illustrate a negative relationship between an increase in capital investment and the subsequent benchmark adjusted returns. The negative relationship is stronger for firms where debt ratios are low, and cash flows are high, which give the firm more considerable discretion over its investments.
+
+Hirshleifer, Hou, Teoh, and Zhang (2004) demonstrate that when a firm’s cumulative net operating income is growing faster than its free cash flow, it will see weak earnings growth. The net operating assets effect is identified as resulting from attention limited investors focusing on accounting profitability instead of cash profitability. Net operating assets is a measure of the over-optimism created by the reporting of accounting profits. The authors find that the effect is robust to an extensive range of control variables and different testing methodologies. 
+
+Sloan (1996) provides an investigation into whether stock prices reflect current information about the future of a firm’s earnings that are contained in the accrual and cash flow components of financial statements. The persistence of a firm’s profits into the future depends on the relative magnitude of the firm's cash and accrual positions. Stock prices, on the other hand, are fixated on current earnings and fail to reflect, to the fullest extent, the information contained in the accruals and cash positions until those positions are felt in future earnings. 
+
+Pontiff and Woodgate (2008) delve into the issue of share issuance and returns first touched upon by Loughran and Ritter (1995). The authors find a negative relation between stock issuance and long-run returns and a positive relationship between share repurchases and long-run returns. These results were unaffected by seasoned equity offerings. 
+
+Daniel and Titman (2006) explore how the book-to-market effect is a proxy for intangible returns rather than the interpretation of it being an indicator of high future returns for distressed stocks with poor past performance. The authors find that a stocks future returns are unrelated to the firms past accounting performance. However, it is strongly negatively related to the intangible return. The intangible return is the component of past returns that is orthogonal to the firm’s past performance. Finally, Daniel and Titman note that a measure of composite equity issues is related to intangible returns while independently forecasting returns. 
+
+Campbell, Hilscher and Szilagyi (2008) depict the relationship between the determinants of firm failure and the pricing of financially distressed stocks that have a high probability of failure. The authors estimate failure probability using a dynamic logit model based on accounting and market variables. Financially distressed firms deliver lower returns than their un-distressed counterparts. Firms with a high failure probability are found to have higher standard deviations, market betas and loading on value and small-cap risk. 
+
+Dichev (1998) breaks down the relationship between bankruptcy risk and returns. Bankruptcy risk acts as a proxy for firm distress, which previous studies suggest could be behind the size and book-to-market effects. A positive association between bankruptcy risk and returns would indicate that bankruptcy risk is systematic. However, Dichev finds that that firms with a high risk of bankruptcy earn lower returns, meaning that distress is unlikely to account for the size or book-to-market effects. 
+
+\section{Data: Anomalies, Volatility, Economic Policy Uncertainty and Liquidity}
+\subsection{Anomalies: Data Gathering and Variable Construction}
+This research explores the eleven previously documented anomalies which still exist even after exposure to the three factors set out by~\cite{fama1993common}. As noted by~\cite{stambaugh2012short}, the use of the Fama and French three factor model rather than the capital asset pricing model (CAPM) as a hurdle is important because just using the CAPM would create an inordinately broad set of anomalies to be tested. 
+
+To calculate the anomalies, CRSP data will be obtained from Wharton Research Data Services (WRDS). The dataset will cover the firms on the S\&P 500 index starting in 1974 and running through to 2018. How the construction is undertaken is outlined below and is based on~\cite{chu2017causal}.
+
+\paragraph*{Anomaly One: Momentum}
+The calculation of momentum uses the conventional 11 month ranking period \((t-12 \quad to \quad t-2)\) followed by a one month skip $(t-1)$ and then a one month holding period $(t)$. The skipped month is used to avoid short-run reversal effects.
+
+\paragraph*{Anomaly Two: Gross Profitability}
+In line with~\cite{novy2013other}, gross profitability will be calculated as total revenue less the cost of goods sold \((REVT_t-COGS_t)\), scaled by the value of total assets $(AT_t)$. 
+
+\paragraph*{Anomaly Three: Asset Growth}
+Asset growth is calculated as the change in total assets \((AT_t  - AT_{t-1})\) and is scaled by lagged total assets \((AT_{t-1})\).
+
+\paragraph*{Anomaly Four: Investment to Assets}
+The investment to assets anomaly is calculated as the annual change in gross property, plant and equipment and inventories, again this is scaled by lagged total assets \((AT_{t-1})\). 
+
+\paragraph*{Anomaly Five: Return on Assets}
+Return on assets is measured as quarterly earnings scaled by total quarterly assets. 
+
+\paragraph*{Anomaly Six: Net Operating Assets}
+To estimate the net operating assets, the difference between all operating assets and all operating liabilities is calculated and then scaled by lagged total assets.
+\[
+NOA= \frac{Operating Asset_t-Operating Liabilities_t}{AT_{t-1}}\]
+
+\paragraph*{Anomaly Seven: Accruals}
+The accrual anomaly is calculated as the changes in non-cash working capital less depreciation expenditure and scaled by lagged total assets.
+    \begin{dmath*}
+        Accruals_t = \frac{(\Delta CA - \Delta Cash) - (\Delta CL -\Delta STD -\Delta TP)-DAE)}{AT_{t-1}}
+    \end{dmath*}
+
+\paragraph*{Anomaly Eight: Net Stock Issues}
+To measure the anomaly on an annual basis, the change in the natural logarithm of a firm’s adjusted shares over the previous year. 
+\[
+NSI_t = \ln (Adjusted \ Shares_t ) - \ln ( Adjusted \ Shares_{t-1})
+\]
+
+\paragraph*{Anomaly Nine: Composite Equity Issues}
+The composite equity measure decreases because of share repurchases, dividends and any other actions that remove cash from the firm. 
+\[
+CEI_t = \ln (\frac{Me_t}{Me_{t-5}})  - r(t - 5,t)
+\]
+
+\paragraph*{Anomaly Ten: Failure Probability }
+A dynamic logit model that matches empirically observed default events using both market and accounting information is used as a measure of failure probability. 
+    \begin{dmath*}
+        FP_t  =  - 9.16 - 20.26 NIMTAAVG_t+ 1.42 TLMTA_t  - 7.13 EXRETAVG_t + 1.41 SIGMA_t  - 0.045 RSIZE_t - 2.13 CASHMTA_t + 0.075 MB_t - 0.058 PRICE_t
+    \end{dmath*}
+
+\paragraph*{Anomaly Eleven: O-Score}
+Another measure of financial distress is the O-score proposed by\cite{ohlson1980financial}.
+
+    \begin{dmath*}
+        OS_t= - 1.32 - 0.407 \log (ADJASSET_t )  + 6.03 TLTA_t- 1.43 WCTA_t+ 0.076 CLCA_t- 1.72O ENEG_t- 2.37 NITA_t- 1.83 FUTL_t+ 0.285 INTWO_t- 0.521 CHIN_t
+    \end{dmath*}
+
+\subsubsection{Anomaly Long-Short Portfolios}
+For each of the eleven anomalies, all of the stocks are sorted from best to worst and split into decile portfolios. Value weighted returns are calculated for each decile portfolio. A long-short strategy is implemented using the best and worst deciles, going long on the high performing decile and short on the worst performing decile. 
+
+\subsection{Additional Data}
+\subsubsection{Fama French Factor Data}
+To thoroughly investigate how much of the excess returns of the anomaly factors are being driven by the aggregate volatility risk factor return generated by the Fama and French factors needs to be ruled out. Data from the Kenneth R. French data library is the source used for Fama and Fench factor data. The Fama and French three-factor (FF3) data set contain the excess return on the market factor $(Rm - Rf)$, the size factor (SMB) and the value factor (HML). The Fama and French five-factor (FF5) data set contain the same factors as the FF3 dataset with the addition of the profitability factor (RMW) and the investment factor (CMA). The momentum factor data, used in the six-factor model, is sourced from WRDS.
+
+\subsubsection{Volatility Data}
+The measure of aggregate volatility used for this research is the Chicago Board Options Exchange (CBOE) volatility index (VXO). The VXO is a measure of implied volatility calculated using the 30-day S\&P 100 index (OEX). The VXO index was chosen over the newer VIX index, which is calculated using the S\&P 500 index, because the VXO has a more extended data range and the is highly correlated with the VIX. Price data for the VXO was taken from WRDS.
+
+\subsubsection{Economic Uncertainty Data}
+The index for economic policy uncertainty (EPU) was developed by\cite{baker2016measuring} and is constructed from three components. The first component is an analysis of the economic sentiment of ten large US-based newspapers. The second component looks at the number of federal tax code provisions set to expire in the next ten years, based on reports from the Congressional Budget Office. The final component looks at the level of disagreement between professional economic forecasters, utilising data from the Federal Reserve Bank of Philadelphia's Survey of Professional Forecasters.
+
+\subsubsection{Market Liquidity Data}
+As a proxy for market liquidity\cite{pastor2003liquidity}'s aggregated, liquidity index is used. 
+
+
+\section{Portfolio Performance: Unconditional Pattern}
+\subsection{Excess Return }
+The highest mean excess returns in the long arm are generated by the Momentum (0.0133) anomaly, and the lowest mean excess returns in the long arm are produced by the Accruals (0.0098) and O-Score (0.0097) anomalies. In the short arm of the portfolios, the highest mean excess returns are created by the Gross Profitability (0.0080) anomaly, and the lowest is produced by the Momentum (0.0029) anomaly. Finally looking at the long minus short portfolios the greatest mean excess returns is generated by the Momentum (0.0103) anomaly with the lowest mean returns being generated by the O-Score (0.0021) anomaly.
+
+Stock Issuance (0.0412) has the smallest standard deviation in the long arm of the portfolios, while the Momentum (0.0615) and Accrual (0.0578) anomalies have the largest standard deviations. Looking at the short arm of the portfolio, the Net Operating Assets (0.0530) anomaly has the smallest standard deviation, and Failure Probability (0.0871) has the largest standard deviations. Examining the standard deviations of the long minus short portfolios Stock Issuance (0.0291), Net Operating Assets (0.0293) and Investment to Assets (0.0295) all have the smallest standard deviations. At the other end of the scale, the Momentum (0.0692) and Failure Probability (0.0680) anomalies have the largest standard deviations.
+
+Looking at the correlations between each of the anomaly portfolios, there is very little correlation in the returns to each of the portfolios. Composite Equity Issue and Net Stock issue are the most correlated anomalies (0.75) with the Failure Probability and O-Score anomalies having the second-highest correlation (0.7). Both of these high correlations make sense as what the underlying anomalies are measuring is related. The least correlated anomalies are Assets Growth and Momentum (0).
+
+\begin{table}[h!]
+\centering
+\caption{\newline The table reports the mean and standard deviations of the eleven anomalies in Panel A and the correlations between the anomalies in Panel B.}
+\label{tab:Table 1}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{@{}rlrrrrrrrrrrr@{}}
+\toprule
+\multicolumn{1}{l}{Anomalies} & \multicolumn{1}{r}{} & (1) & (2) & (3) & (4) & (5) & (6) & (7) & (8) & (9) & (10) & (11) \\ \midrule
+\multicolumn{2}{l}{Panel A: Excess Returns} &  &  &  &  &  &  &  &  &  &  &  \\
+\multicolumn{2}{l}{Long Leg (Mean)} & 0.0098 & 0.0107 & 0.0112 & 0.0105 & 0.0114 & 0.0107 & 0.0133 & 0.0113 & 0.0097 & 0.0111 & 0.0104 \\
+\multicolumn{2}{l}{Short Leg (Mean)} & 0.0072 & 0.0073 & 0.0067 & 0.0037 & 0.0080 & 0.0075 & 0.0029 & 0.0045 & 0.0076 & 0.0050 & 0.0055 \\
+\multicolumn{2}{l}{Long Minus Short (Mean)} & 0.0027 & 0.0034 & 0.0044 & 0.0068 & 0.0034 & 0.0032 & 0.0103 & 0.0068 & 0.0021 & 0.0061 & 0.0049 \\
+\multicolumn{1}{l}{} & \multicolumn{1}{r}{} &  &  &  &  &  &  &  &  &  &  &  \\
+\multicolumn{2}{l}{Long Leg (Std Dev)} & 0.0578 & 0.0488 & 0.0436 & 0.0462 & 0.0448 & 0.0480 & 0.0615 & 0.0536 & 0.0530 & 0.0487 & 0.0412 \\
+\multicolumn{2}{l}{Short Leg (Std Dev)} & 0.0598 & 0.0582 & 0.0553 & 0.0871 & 0.0595 & 0.0554 & 0.0776 & 0.0530 & 0.0629 & 0.0698 & 0.0552 \\
+\multicolumn{2}{l}{Long Minus Short (Std Dev)} & 0.0320 & 0.0343 & 0.0319 & 0.0680 & 0.0392 & 0.0295 & 0.0692 & 0.0293 & 0.0352 & 0.0435 & 0.0291 \\
+\multicolumn{2}{l}{Panel B: Correlations (Long-Short)} &  &  &  &  &  &  &  &  &  &  &  \\
+(1) & Accrual & 1.0000 &  &  &  &  &  &  &  &  &  &  \\
+(2) & Asset Growth & 0.2132 & 1.0000 &  &  &  &  &  &  &  &  &  \\
+(3) & Composite Equity Issuance & 0.1413 & 0.4807 & 1.0000 &  &  &  &  &  &  &  &  \\
+(4) & Failure Probability & -0.0389 & 0.1870 & 0.3712 & 1.0000 &  &  &  &  &  &  &  \\
+(5) & Gross Profitability & -0.1142 & -0.0303 & 0.1656 & 0.5653 & 1.0000 &  &  &  &  &  &  \\
+(6) & Investments to Assets & 0.1279 & 0.4464 & 0.2760 & 0.0413 & -0.1137 & 1.0000 &  &  &  &  &  \\
+(7) & Momentum & -0.0263 & 0.0040 & -0.0175 & 0.6097 & 0.3615 & 0.0821 & 1.0000 &  &  &  &  \\
+(8) & Net Operating Assets & 0.1166 & 0.2507 & 0.1299 & 0.0629 & -0.3355 & 0.3742 & 0.1130 & 1.0000 &  &  &  \\
+(9) & O-Score & 0.0812 & -0.2241 & 0.2401 & 0.3974 & 0.3320 & -0.0887 & 0.0709 & 0.0513 & 1.0000 &  &  \\
+(10) & Return on Assets & -0.1551 & 0.0515 & 0.3767 & 0.7006 & 0.4719 & -0.0375 & 0.3404 & 0.0235 & 0.6089 & 1.0000 &  \\
+(11) & Stock Issuance & 0.0894 & 0.4061 & 0.7539 & 0.4972 & 0.3110 & 0.3065 & 0.1068 & 0.1610 & 0.3297 & 0.4538 & 1.0000 \\ \bottomrule
+\end{tabular}%
 }
+\end{table}
+
+\subsection{Risk-Adjusted Returns}
+\begin{table}[h]
+    \scriptsize
+    \caption{\newline Capital Asset Pricing Model (CAPM) regression of all eleven portfolio returns. All t-statistics are Newy-West t-statistics.}
+    \label{tab:Table 2}
+    \begin{tabular}{@{}lrr@{}}
+    \toprule
+     & $\alpha$ & $\beta_{mkt}$ \\ \midrule
+    \multirow{2}{*}{Accrual} & 0.0029 & -0.0004 \\
+     & 1.6683 & -0.6422 \\
+    \multirow{2}{*}{Asset Growth} & 0.0048 & -0.0022 \\
+     & 2.2283 & -2.8917 \\
+    \multirow{2}{*}{Composite Equity Issuance} & 0.0064 & -0.0031 \\
+     & 3.6253 & -5.4860 \\
+    \multirow{2}{*}{Failure Probability} & 0.0123 & -0.0084 \\
+     & 4.1850 & -6.3183 \\
+    \multirow{2}{*}{Gross Profitability} & 0.0052 & -0.0027 \\
+     & 2.4793 & -3.7007 \\
+    \multirow{2}{*}{Investments to Assets} & 0.0039 & -0.0012 \\
+     & 2.3961 & -2.9314 \\
+    \multirow{2}{*}{Momentum} & 0.0121 & -0.0026 \\
+     & 3.5083 & -1.8785 \\
+    \multirow{2}{*}{Net Operating Assets} & 0.0067 & 0.0001 \\
+     & 3.8626 & 0.2801 \\
+    \multirow{2}{*}{O-Score} & 0.0033 & -0.0018 \\
+     & 1.8566 & -3.7489 \\
+    \multirow{2}{*}{Return on Assets} & 0.0087 & -0.0040 \\
+     & 3.9559 & -4.8412 \\
+    \multirow{2}{*}{Stock Issuance} & 0.0067 & -0.0028 \\
+     & 4.2657 & -5.3211 \\ \bottomrule
+    \end{tabular}
+\end{table}
+
+\begin{table}[h]
+    \scriptsize
+    \caption{\newline Fama and French Three-Factor (FF3) regression of all eleven portfolio returns. All t-statistics are Newy-West t-statistics.}
+    \label{tab:Table 3}
+    \begin{tabular}{@{}lrrrr@{}}
+    \toprule
+     & $\alpha$ & $\beta_{mkt}$ & $\beta_{smb}$ & $\beta_{hml}$ \\ \midrule
+    \multirow{2}{*}{Accrual} & 0.0025 & 0.0001 & -0.0020 & 0.0011 \\
+     & 1.4371 & 0.1855 & -2.6101 & 1.3392 \\
+    \multirow{2}{*}{Asset Growth} & 0.0027 & -0.0016 & 0.0015 & 0.0063 \\
+     & 1.8023 & -2.9028 & 1.4695 & 5.6809 \\
+    \multirow{2}{*}{Composite Equity Issuance} & 0.0052 & -0.0022 & -0.0031 & 0.0033 \\
+     & 3.7271 & -4.8482 & -5.6413 & 3.3905 \\
+    \multirow{2}{*}{Failure Probability} & 0.0141 & -0.0084 & -0.0047 & -0.0055 \\
+     & 5.2882 & -7.3066 & -2.5094 & -1.9186 \\
+    \multirow{2}{*}{Gross Profitability} & 0.0077 & -0.0036 & -0.0014 & -0.0075 \\
+     & 4.8188 & -5.9098 & -2.5718 & -6.0304 \\
+    \multirow{2}{*}{Investments to Assets} & 0.0032 & -0.0010 & 0.0007 & 0.0022 \\
+     & 1.9801 & -2.1380 & 0.7987 & 2.8756 \\
+    \multirow{2}{*}{Momentum} & 0.0141 & -0.0036 & 0.0011 & -0.0059 \\
+     & 4.2024 & -3.0342 & 0.5078 & -2.2889 \\
+    \multirow{2}{*}{Net Operating Assets} & 0.0059 & 0.0004 & 0.0001 & 0.0024 \\
+     & 3.5083 & 1.1388 & 0.1178 & 2.6413 \\
+    \multirow{2}{*}{O-Score} & 0.0046 & -0.0014 & -0.0070 & -0.0042 \\
+     & 3.1554 & -3.5741 & -12.7384 & -6.0907 \\
+    \multirow{2}{*}{Return on Assets} & 0.0092 & -0.0033 & -0.0064 & -0.0020 \\
+     & 4.4915 & -4.3282 & -8.2358 & -1.5375 \\
+    \multirow{2}{*}{Stock Issuance} & 0.0063 & -0.0023 & -0.0030 & 0.0009 \\
+     & 4.5894 & -4.6601 & -4.8079 & 0.8999 \\ \bottomrule
+    \end{tabular}
+\end{table}
+
+\begin{table}[h]
+    \scriptsize
+    \caption{\newline Fama and French Five-Factor (FF5) regression of all eleven portfolio returns. All t-statistics are Newy-West t-statistics.}
+    \label{tab:Table 4}
+    \resizebox{\textwidth}{!}{%
+    \begin{tabular}{@{}lrrrrrr@{}}
+    \toprule
+     & \multicolumn{1}{l}{$\alpha$} & \multicolumn{1}{l}{$\beta_{mkt}$} & \multicolumn{1}{l}{$\beta_{smb}$} & \multicolumn{1}{l}{$\beta_{hml}$} & \multicolumn{1}{l}{$\beta_{rmw}$} & \multicolumn{1}{l}{$\beta_{cma}$} \\ \midrule
+    \multirow{2}{*}{Accrual} & 0.0031 & 0.0000 & -0.0037 & 0.0005 & -0.0039 & 0.0039 \\
+     & 1.9846 & 0.0859 & -4.8695 & 0.5756 & -3.4581 & 2.8569 \\
+    \multirow{2}{*}{Asset Growth} & -0.0003 & -0.0002 & 0.0010 & 0.0011 & 0.0000 & 0.0116 \\
+     & -0.2609 & -0.6714 & 1.4838 & 1.7117 & 0.0463 & 9.3610 \\
+    \multirow{2}{*}{Composite Equity Issuance} & 0.0021 & -0.0010 & -0.0020 & 0.0008 & 0.0039 & 0.0052 \\
+     & 1.7298 & -2.6405 & -3.1066 & 1.0162 & 5.5378 & 5.6771 \\
+    \multirow{2}{*}{Failure Probability} & 0.0080 & -0.0062 & -0.0019 & -0.0096 & 0.0095 & 0.0071 \\
+     & 2.4950 & -7.0509 & -1.0408 & -5.7583 & 2.7921 & 2.0627 \\
+    \multirow{2}{*}{Gross Profitability} & 0.0029 & -0.0018 & 0.0009 & -0.0111 & 0.0076 & 0.0057 \\
+     & 2.0654 & -4.6250 & 1.3734 & -14.6968 & 8.0593 & 4.1830 \\
+    \multirow{2}{*}{Investments to Assets} & 0.0024 & -0.0004 & -0.0008 & -0.0008 & -0.0028 & 0.0079 \\
+     & 1.5215 & -1.0313 & -1.4476 & -0.8376 & -4.1968 & 7.0179 \\
+    \multirow{2}{*}{Momentum} & 0.0110 & -0.0024 & 0.0018 & -0.0095 & 0.0033 & 0.0065 \\
+     & 2.5195 & -1.9813 & 0.8725 & -3.6758 & 1.0630 & 1.3729 \\
+    \multirow{2}{*}{Net Operating Assets} & 0.0071 & 0.0001 & -0.0009 & 0.0030 & -0.0027 & -0.0002 \\
+     & 3.9259 & 0.1200 & -1.1257 & 3.2529 & -2.5938 & -0.1519 \\
+    \multirow{2}{*}{O-Score} & 0.0038 & -0.0012 & -0.0058 & -0.0022 & 0.0038 & -0.0037 \\
+     & 2.6349 & -2.8012 & -10.3302 & -2.4926 & 5.3981 & -2.8154 \\
+    \multirow{2}{*}{Return on Assets} & 0.0041 & -0.0016 & -0.0027 & -0.0033 & 0.0110 & 0.0006 \\
+     & 2.5776 & -3.5436 & -4.1769 & -4.3513 & 9.6893 & 0.4828 \\
+    \multirow{2}{*}{Stock Issuance} & 0.0028 & -0.0009 & -0.0018 & -0.0022 & 0.0043 & 0.0063 \\
+     & 2.2928 & -2.5202 & -2.5763 & -2.6465 & 6.4531 & 6.4510 \\ \bottomrule
+    \end{tabular}%
+    }
+\end{table}
+
+\begin{table}[h]
+    \scriptsize
+    \caption{\newline Fama and French Six-Factor (FF6) regression of all eleven portfolio returns. All t-statistics are Newy-West t-statistics.}
+    \label{tab:Table 5}
+    \resizebox{\textwidth}{!}{%
+    \begin{tabular}{@{}lrrrrrrr@{}}
+    \toprule
+    & \multicolumn{1}{l}{$\alpha$} & \multicolumn{1}{l}{$\beta_{mkt}$} & \multicolumn{1}{l}{$\beta_{smb}$} & \multicolumn{1}{l}{$\beta_{hml}$} & \multicolumn{1}{l}{$\beta_{rmw}$} & \multicolumn{1}{l}{$\beta_{cma}$} & \multicolumn{1}{l}{$\beta_{umd}$} \\ \midrule
+    \multirow{2}{*}{Accrual} & 0.0033 & 0.0000 & -0.0036 & 0.0003 & -0.0039 & 0.0041 & -0.0268 \\
+    & 2.0647 & -0.0052 & -4.8596 & 0.3502 & -3.4609 & 2.8505 & -0.5379 \\
+    \multirow{2}{*}{Asset Growth} & -0.0004 & -0.0002 & 0.0010 & 0.0012 & 0.0000 & 0.0115 & 0.0088 \\
+    & -0.2930 & -0.6188 & 1.5183 & 1.5415 & 0.0224 & 10.1232 & 0.1899 \\
+    \multirow{2}{*}{Composite Equity Issuance} & 0.0022 & -0.0010 & -0.0020 & 0.0007 & 0.0040 & 0.0053 & -0.0246 \\
+    & 1.7810 & -2.7163 & -3.1232 & 0.7716 & 5.6699 & 5.7092 & -0.6300 \\
+    \multirow{2}{*}{Failure Probability} & 0.0043 & -0.0052 & -0.0026 & -0.0050 & 0.0075 & 0.0035 & 0.6903 \\
+    & 1.8605 & -8.3174 & -2.0320 & -4.0143 & 2.9168 & 1.7425 & 6.4892 \\
+    \multirow{2}{*}{Gross Profitability} & 0.0022 & -0.0016 & 0.0008 & -0.0103 & 0.0072 & 0.0051 & 0.1215 \\
+    & 1.7099 & -4.4888 & 1.2453 & -14.7359 & 7.8367 & 4.1764 & 3.4074 \\
+    \multirow{2}{*}{Investments to Assets} & 0.0021 & -0.0003 & -0.0009 & -0.0005 & -0.0029 & 0.0077 & 0.0455 \\
+    & 1.3375 & -0.8643 & -1.5562 & -0.5161 & -4.5259 & 6.7733 & 1.1746 \\
+    \multirow{2}{*}{Momentum} & 0.0037 & -0.0003 & 0.0002 & -0.0002 & -0.0006 & -0.0006 & 1.3805 \\
+    & 2.4669 & -0.7046 & 0.3565 & -0.3887 & -0.9102 & -0.6973 & 24.9333 \\
+    \multirow{2}{*}{Net Operating Assets} & 0.0065 & 0.0002 & -0.0010 & 0.0038 & -0.0030 & -0.0008 & 0.1161 \\
+    & 3.8116 & 0.4819 & -1.3352 & 4.0717 & -3.1553 & -0.5509 & 2.3091 \\
+    \multirow{2}{*}{O-Score} & 0.0040 & -0.0012 & -0.0057 & -0.0025 & 0.0039 & -0.0035 & -0.0343 \\
+    & 2.7715 & -3.0196 & -10.2892 & -2.4869 & 5.2604 & -2.7253 & -0.7600 \\
+    \multirow{2}{*}{Return on Assets} & 0.0029 & -0.0013 & -0.0030 & -0.0017 & 0.0104 & -0.0006 & 0.2345 \\
+    & 2.0504 & -3.3278 & -5.2755 & -2.3353 & 10.2912 & -0.5371 & 6.6726 \\
+    \multirow{2}{*}{Stock Issuance} & 0.0027 & -0.0009 & -0.0018 & -0.0020 & 0.0042 & 0.0062 & 0.0187 \\
+    & 2.1030 & -2.3945 & -2.6478 & -2.3906 & 6.8411 & 6.4824 & 0.4867 \\ \bottomrule
+    \end{tabular}%
+    }
+\end{table}
+\begin{table}[h]
+    \caption{\newline Regression of the six Fama and French factors plus the volatility factor of all eleven portfolio returns. All t-statistics are Newy-West t-statistics.}
+    \label{tab:Table 6}
+    \resizebox{\textwidth}{!}{%
+    \begin{tabular}{@{}lrrrrrrrr@{}}
+    \toprule
+     & \multicolumn{1}{l}{$\alpha$} & \multicolumn{1}{l}{$\beta_{mkt}$} & \multicolumn{1}{l}{$\beta_{smb}$} & \multicolumn{1}{l}{$\beta_{hml}$} & \multicolumn{1}{l}{$\beta_{rmw}$} & \multicolumn{1}{l}{$\beta_{cma}$} & \multicolumn{1}{l}{$\beta_{umd}$} & \multicolumn{1}{l}{$\beta_{vol}$} \\ \midrule
+    \multirow{2}{*}{Accrual} & 0.0030 & 0.0000 & -0.0037 & 0.0003 & -0.0039 & 0.0040 & -0.0260 & 0.0000 \\
+     & 0.5924 & -0.0133 & -4.8214 & 0.3410 & -3.3841 & 2.7964 & -0.4961 & 0.0387 \\
+    \multirow{2}{*}{Asset Growth} & -0.0011 & -0.0002 & 0.0011 & 0.0012 & 0.0000 & 0.0115 & 0.0091 & 0.0000 \\
+     & -0.2824 & -0.4026 & 1.7203 & 1.4889 & 0.0088 & 10.1232 & 0.1859 & 0.2508 \\
+    \multirow{2}{*}{Composite Equity Issuance} & 0.0005 & -0.0009 & -0.0020 & 0.0008 & 0.0039 & 0.0053 & -0.0220 & 0.0001 \\
+     & 0.1440 & -2.4552 & -3.1120 & 0.8375 & 5.6193 & 5.5528 & -0.5588 & 0.4635 \\
+    \multirow{2}{*}{Failure Probability} & -0.0031 & -0.0049 & -0.0026 & -0.0046 & 0.0074 & 0.0033 & 0.7028 & 0.0004 \\
+     & -0.4063 & -7.3492 & -2.0009 & -3.5392 & 2.9116 & 1.6146 & 6.6704 & 0.8782 \\
+    \multirow{2}{*}{Gross Profitability} & -0.0024 & -0.0014 & 0.0008 & -0.0101 & 0.0071 & 0.0049 & 0.1292 & 0.0002 \\
+     & -0.6171 & -3.7067 & 1.3272 & -13.1894 & 7.5775 & 3.9787 & 3.3764 & 1.1917 \\
+    \multirow{2}{*}{Investments to Assets} & 0.0032 & -0.0004 & -0.0009 & -0.0005 & -0.0029 & 0.0077 & 0.0439 & -0.0001 \\
+     & 0.7512 & -1.0054 & -1.5722 & -0.5200 & -4.4192 & 6.5403 & 1.1184 & -0.2661 \\
+    \multirow{2}{*}{Momentum} & -0.0066 & 0.0001 & 0.0002 & 0.0002 & -0.0008 & -0.0009 & 1.3985 & 0.0005 \\
+     & -1.6610 & 0.1320 & 0.3482 & 0.3825 & -1.2090 & -1.0211 & 29.2338 & 2.4256 \\
+    \multirow{2}{*}{Net Operating Assets} & -0.0043 & 0.0006 & -0.0010 & 0.0043 & -0.0031 & -0.0011 & 0.1347 & 0.0005 \\
+     & -0.9618 & 1.3208 & -1.3364 & 4.1502 & -3.4291 & -0.7522 & 2.5783 & 2.4026 \\
+    \multirow{2}{*}{O-Score} & -0.0043 & -0.0009 & -0.0058 & -0.0021 & 0.0038 & -0.0038 & -0.0198 & 0.0004 \\
+     & -1.1058 & -2.1827 & -10.3453 & -2.0187 & 5.0731 & -2.8665 & -0.4143 & 2.1152 \\
+    \multirow{2}{*}{Return on Assets} & -0.0055 & -0.0009 & -0.0029 & -0.0014 & 0.0103 & -0.0009 & 0.2490 & 0.0004 \\
+     & -1.4470 & -2.7160 & -5.2029 & -1.5824 & 10.2006 & -0.7316 & 6.6198 & 2.0674 \\
+    \multirow{2}{*}{Stock Issuance} & 0.0039 & -0.0009 & -0.0018 & -0.0021 & 0.0042 & 0.0063 & 0.0166 & -0.0001 \\
+     & 1.1127 & -2.4164 & -2.6335 & -2.2845 & 6.8518 & 6.3380 & 0.4385 & -0.3190 \\ \bottomrule
+    \end{tabular}%
+    }
+    \end{table}
+
+\subsubsection{Capital Asset Pricing Model}
+The alphas, of all eleven anomalies, are positive in the Capital Asset Pricing Model regression. Looking at the t-statistics in table \ref{tab:Table 2}, nine of the alphas are significant at the 5\% level and can reject the null hypothesis $(\alpha=0)$. The nine significant alphas are Asset Growth (0.0064), Composite Equity Issuance (0.0064), Failure Probability (0.0123), Gross Profitability (0.0052), Investment to Assets (0.0039), Momentum (0.0121), Net Operating Assets (0.0067), Return on Assets (0.0087) and Stock Issuance (0.0067).
+
+Looking at the t-statistics of the market factor the null hypothesis $(\beta_{mkt}= 0)$ can be rejected at the 5\% level of significance for Asset Growth (-2.8917), Composite Equity Issue (-5.4860), Failure Probability (-6.3183), Gross Profitability (-3.7007), Investment to Assets (-2.9314), O-Score (-3.7489), Return on Assets (-4.8412) and Stock Issuance (-5.3211). 
+
+\subsubsection{Fama and French Three-Factor Model}
+With the Fama and French three-factor model as with the CAPM, the alphas of all eleven anomalies are positive. However, when looking at the t-statics, Asset Growth (0.0027) and Investment to Assets (1.9801) are no longer significant at the 5\% level meaning that the null hypothesis $(\alpha=0)$ can no longer be rejected. Looking at the t-statistic for O-Score (3.1554) it is now significant at the 5\% level, and the null hypothesis that the alpha equals zero can be rejected. 
+
+Examining the t-statistics of the Fama and French Three Factors all of the same anomalies can reject the null hypothesis for the market factor $(\beta_{mkt}= 0)$ at the 5\% level of significance with the addition of Momentum (-3.0342). 
+
+Looking at the t-statistics for the small minus big factor the null hypothesis of $(\beta_{smb}= 0)$ can be rejected for Accruals (2.6101), Composite Equity Issuance (-5.6413), Failure Probability (-2.5094), Gross Profitability (-2.5718), O-Score (-12.7384), Return on Assets (-8.2358) and Stock Issuance (-4.8079) at the 5\% level of significance. 
+
+For the high minus low factor the null hypothesis $(\beta_{hml}= 0)$ can be rejected, at the 5\% level of significance, for Asset Growth (5.6809), Composite Equity Issuance (3.3905), Gross Profitability (-6.0304), Investment to Assets (2.8756), Momentum (-2.2889), Net Operating Assets (2.6413) and O-Score (-6.0907).
+
+\subsubsection{Fama and French Five-Factor Model}
+The alpha generated by the Asset Growth anomaly, in the Fama and French five-factor model, is negative (-0.0003), but it is not significant at the 5\% level (-0.2609). Looking at the alphas of the other ten anomalies, they are all positive, and seven of the ten positive alphas are significant at the 5\% level. The only change from the Fama and French three-factor model is that the t-statistic of the alpha for the Composite Equity Issuance (1.7298) is no longer significant at the 5\% level, meaning that the null hypothesis that it equals zero can not be rejected.
+
+Examining the test statistics of the Fama and French five factors the null hypothesis for the market factor $(\beta_{mkt}= 0)$ is no longer rejected, at the 5\% level of significance) for Asset Growth (-0.0002), Investment to Assets (-0.0004) and Momentum (-1.9813). 
+
+Looking to the size factor the null hypothesis $(\beta_{smb}= 0)$ is no longer rejected for Failure Probability (-1.0408) and Gross Profitability (1.3734) at the 5\% level of significance.
+
+Moving to the high minus low factor the null hypothesis $(\beta_{hml}= 0)$ is no longer rejected, at the 5\% level of significance, for Accruals (0.5756) and Composite Equity Issuance (0.0008). However, the null hypothesis $(\beta_{hml}= 0)$ is no longer rejected for Momentum (-3.6758) and Net Operating Assets (3.2529) at the 5\% level of significance.
+
+Exploring the t-statistics for the robust minus weak factor the null hypothesis of $(\beta_{rmw}= 0)$ can be rejected, at the 5\% level of significance, for Accruals (-3.4581), Composite Equity Issuance (5.5378), Failure Probability (2.7921), Gross Profitability (8.0593), Investment to Assets (-4.1968), Net Operating Assets (-2.5938), O-Score (5.3981), Return on Assets (9.6893) and Stock Issuance (6.4531).
+
+Studying the conservative minus aggressive factor the null hypothesis $(\beta_{cma}= 0)$ can be rejected, at the 5\% level of significance, for Accruals (2.8569), Asset Growth (9.3610), Composite Equity Issuance (5.6771), Failure Probability (2.0627), Gross Profitability (4.1830), Investment to Assets (7.0179), O-Score (-2.8154) and Stock Issuance (6.4510).
+
+\subsubsection{Fama and French Six-Factor Model}
+Only six of the eleven alphas are significant at the 5\% level of significance in the Fama and French six-factor model. The Asset Growth alpha is still negative and insignificant, the same as the five-factor model. Looking at the t-statistics, compared to the five-factor model Failure Probability (1.8605) and Gross Profitability (1.7810) are no longer significant however the Accrual anomaly (2.0647) is significant at the 5\% level.
+
+Examining the t-statistics of the Fama and French six factors, there is no change in the significance of the market factor for any of the anomalies between the Fama and French five-factor and six-factor models. Looking at the size factor, its significance for each of the anomalies is the same as the five-factor model except for Failure Probability (-2.0320) which is now significant at the 5\% level of significance. Exploring the t-statistics for the value factor, the significance of the betas for each of the anomalies is the same as the five-factor model, except for Momentum (-0.9102) witch is no longer significant at the 5\% level of significance. Moving to the t-statistics of the robust minus weak factor nine betas are significant, the same nine in the five-factor model. Examining the conservative minus aggressive anomaly, except for the Failure Probability (0.0051) anomaly, which is not significant at the 5\% level, the same betas are significant as in the five-factor model.
+
+Finally looking at the t-statistics for the up minus down factor the null hypothesis $(\beta_{umd}= 0)$ can be rejected, at the 5\% level of significance, for Failure Probability (6.4892), Gross Profitability (3.4074), Momentum (24.9333), Net Operating Assets (2.3091) and Return on Assets (6.6726).
+
+That the up minus down factor almost entirely explains the returns for the Momentum anomaly is due to them measuring the same return aspect, though there are minor differences in the construction of the anomaly and the factor.
+
+\subsubsection{Fama and French Six-Factor Model + Volatility}
+With the addition of the volatility factor to the Fama and French six-factor model, none of the alphas generated by the anomaly portfolios is significant, at the 5\% level, meaning that the null hypothesis that the alpha equals zero cannot be rejected for any of the portfolios. 
+
+Examining the t-statistics for each of the factors that carry over from the six-factor model, the significance of each beta is the same except for the high minus low factor for Return on Assets (-1.5824) which is no longer significant at the 5\% level. 
+
+Looking at the volatility factor, the t-statistics for Momentum (2.4256), Net Operating Assets (2.4026), O-Score (2.1152) and Return on Assets (2.0674) are significant at the 5\% level of significance meaning that the null hypothesis $(\beta_{vxo}= 0)$ can be rejected, and their volatility betas are significantly different from zero
+
+\section{Portfolio Performance: Conditional Pattern}
+After looking at the performance of the anomaly portfolios with an unconditional pattern the analysis was run again using three conditional patterns. The three conditions were built on volatility, economic policy uncertainty and market liquidity. For each of these conditions, the top and bottom 30\% values were calculated and used to filter the anomaly portfolio datasets for years that followed a year where volatility, economic policy uncertainty or market liquidity was in the top or bottom 30\%.
+
+
+\bibliography{master}
+\bibliographystyle{apalike}
+\end{document}                          % Document ends here
