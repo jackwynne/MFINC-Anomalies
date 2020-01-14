@@ -1,12 +1,12 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7250 64-bit) (preloaded format=pdflatex 2020.1.13)  14 JAN 2020 16:44
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7250 64-bit) (preloaded format=pdflatex 2020.1.13)  14 JAN 2020 16:50
 entering extended mode
 **"c:/Users/jackw/OneDrive/Documents/2019/MFINC/Code/LaTeX/Revisiting the Anomalies.tex"
 ("c:/Users/jackw/OneDrive/Documents/2019/MFINC/Code/LaTeX/Revisiting the Anomalies.tex"
 LaTeX2e <2019-10-01> patch level 3
 ("C:\Users\jackw\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\article.cls"
 Document Class: article 2019/10/25 v1.4k Standard LaTeX document class
-("C:\Users\jackw\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\size10.clo"
-File: size10.clo 2019/10/25 v1.4k Standard LaTeX file (size option)
+("C:\Users\jackw\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\size12.clo"
+File: size12.clo 2019/10/25 v1.4k Standard LaTeX file (size option)
 )
 \c@part=\count80
 \c@section=\count81
@@ -425,12 +425,12 @@ LaTeX Font Info:    ... okay on input line 15.
 * \topmargin=-66.59087pt
 * \headheight=12.0pt
 * \headsep=25.0pt
-* \topskip=10.0pt
+* \topskip=12.0pt
 * \footskip=28.45274pt
-* \marginparwidth=57.0pt
-* \marginparsep=11.0pt
+* \marginparwidth=35.0pt
+* \marginparsep=10.0pt
 * \columnsep=10.0pt
-* \skip\footins=9.0pt plus 4.0pt minus 2.0pt
+* \skip\footins=10.8pt plus 4.0pt minus 2.0pt
 * \hoffset=0.0pt
 * \voffset=0.0pt
 * \mag=1000
@@ -460,42 +460,34 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 48
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 19.
+(Font)              <14.4> on input line 19.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 19.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 19.
+(Font)              <7> on input line 19.
  [1
 Non-PDF special ignored!
 <special> papersize=597.50787pt,845.04684pt
 
 {C:/Users/jackw/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}] [2
 
-] [3]
+] [3] [4]
+Overfull \hbox (0.69214pt too wide) in paragraph at lines 61--61
+|[]\OT1/cmr/bx/n/17.28 Data: Anoma-lies, Volatil-ity, Eco-nomic Pol-icy Un-cer-tainty
+ []
+
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 68.
+(Font)              <12> on input line 68.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 68.
- [4
+(Font)              <8> on input line 68.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 68.
+[5
 
-] [5] (tables/uncon-stats.tex) [6
+] [6] [7] (tables/uncon-stats.tex) [8
 
-] [7] (tables/unconditional.tex
+] [9] [10] (tables/unconditional.tex
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 6.
 
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-) [8] [9] [10] (tables/vol-stats.tex) [11
-
-] [12] [13] (tables/vol-models.tex
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
@@ -508,9 +500,12 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-) [14] [15] [16] (tables/epu-stats.tex) [17
+) [11] [12] [13] [14] (tables/vol-stats.tex) [15
 
-] [18] [19] (tables/epu-models.tex
+] [16] [17] [18] (tables/vol-models.tex
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
@@ -518,7 +513,33 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 74--106
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 150--182
+[][]
+ []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+) [19] [20] [21] [22] (tables/epu-stats.tex
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+) [23
+
+]
+Overfull \hbox (2.55614pt too wide) in paragraph at lines 263--264
+[]\OT1/cmr/m/n/12 Comparing the high and low eco-nomic pol-icy un-cer-tainty three-factor mod-els, the Ac-crual anomaly
+ []
+
+[24] [25] [26] [27] (tables/epu-models.tex
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 76--108
 [][]
  []
 
@@ -529,16 +550,11 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 148--180
-[][]
- []
-
-
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-) [20] [21] [22] [23] (tables/liq-stats.tex) [24
+) [28] [29] [30] (tables/liq-stats.tex) [31
 
-] [25] [26] (tables/liq-models.tex
+] [32] [33] [34] (tables/liq-models.tex
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
@@ -554,22 +570,22 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-) [27] [28] [29] [30] ("Revisiting the Anomalies.bbl") [31
+) [35] [36] [37] [38] ("Revisiting the Anomalies.bbl") [39
 
 
 ] ("Revisiting the Anomalies.aux") ) 
 Here is how much of TeX's memory you used:
- 14009 strings out of 492483
- 254110 string characters out of 3121589
- 392620 words of memory out of 3000000
- 18298 multiletter control sequences out of 15000+200000
- 536939 words of font info for 39 fonts, out of 3000000 for 9000
+ 14011 strings out of 492483
+ 254170 string characters out of 3121589
+ 392960 words of memory out of 3000000
+ 18301 multiletter control sequences out of 15000+200000
+ 537853 words of font info for 42 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  45i,10n,67p,2855b,317s stack positions out of 5000i,500n,10000p,200000b,50000s
-<C:/Users/jackw/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/jackw/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/jackw/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/jackw/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi5.pfb><C:/Users/jackw/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/jackw/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/jackw/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/jackw/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/jackw/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/jackw/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/jackw/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Users/jackw/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on "Revisiting the Anomalies.pdf" (31 pages, 277824 bytes).
+<C:/Users/jackw/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/jackw/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/jackw/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Users/jackw/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/jackw/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/jackw/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/jackw/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/jackw/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/jackw/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/jackw/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti12.pfb>
+Output written on "Revisiting the Anomalies.pdf" (39 pages, 252558 bytes).
 PDF statistics:
- 150 PDF objects out of 1000 (max. 8388607)
+ 169 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
