@@ -1,0 +1,298 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.1 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{nyt/global//global/global}
+    \entry{baker2016measuring}{article}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=44c1fb654911b2846ca5c9262f750497}{%
+           family={Baker},
+           familyi={B\bibinitperiod},
+           given={Scott\bibnamedelima R},
+           giveni={S\bibinitperiod\bibinitdelim R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=1f9ed1162402cc5a63ec1d1f470ea527}{%
+           family={Bloom},
+           familyi={B\bibinitperiod},
+           given={Nicholas},
+           giveni={N\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=436e25609a5e8f78d485f754f4af4176}{%
+           family={Davis},
+           familyi={D\bibinitperiod},
+           given={Steven\bibnamedelima J},
+           giveni={S\bibinitperiod\bibinitdelim J\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Oxford University Press}%
+      }
+      \strng{namehash}{06807450d490fd8ee92d0ce9beddc842}
+      \strng{fullhash}{06807450d490fd8ee92d0ce9beddc842}
+      \strng{bibnamehash}{06807450d490fd8ee92d0ce9beddc842}
+      \strng{authorbibnamehash}{06807450d490fd8ee92d0ce9beddc842}
+      \strng{authornamehash}{06807450d490fd8ee92d0ce9beddc842}
+      \strng{authorfullhash}{06807450d490fd8ee92d0ce9beddc842}
+      \field{sortinit}{B}
+      \field{sortinithash}{8de16967003c7207dae369d874f1456e}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{The quarterly journal of economics}
+      \field{number}{4}
+      \field{title}{Measuring economic policy uncertainty}
+      \field{volume}{131}
+      \field{year}{2016}
+      \field{pages}{1593\bibrangedash 1636}
+      \range{pages}{44}
+    \endentry
+    \entry{chu2017causal}{report}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=997a35c1d4ab4a141a7f0703000f9b9e}{%
+           family={Chu},
+           familyi={C\bibinitperiod},
+           given={Yongqiang},
+           giveni={Y\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=8dae54e1e4ab0db00e73f56228fdded4}{%
+           family={Hirshleifer},
+           familyi={H\bibinitperiod},
+           given={David},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=1391405e7ab63fb890ccba34bb328853}{%
+           family={Ma},
+           familyi={M\bibinitperiod},
+           given={Liang},
+           giveni={L\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{institution}{1}{%
+        {National Bureau of Economic Research}%
+      }
+      \strng{namehash}{65aca19b5c7838b64bb264f650ead0e1}
+      \strng{fullhash}{65aca19b5c7838b64bb264f650ead0e1}
+      \strng{bibnamehash}{65aca19b5c7838b64bb264f650ead0e1}
+      \strng{authorbibnamehash}{65aca19b5c7838b64bb264f650ead0e1}
+      \strng{authornamehash}{65aca19b5c7838b64bb264f650ead0e1}
+      \strng{authorfullhash}{65aca19b5c7838b64bb264f650ead0e1}
+      \field{sortinit}{C}
+      \field{sortinithash}{4c244ceae61406cdc0cc2ce1cb1ff703}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{The causal effect of limits to arbitrage on asset pricing anomalies}
+      \field{type}{techreport}
+      \field{year}{2017}
+    \endentry
+    \entry{fama1993common}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=cf1dad75742cba1f00261a0ee70e7ba2}{%
+           family={Fama},
+           familyi={F\bibinitperiod},
+           given={Eugene\bibnamedelima F},
+           giveni={E\bibinitperiod\bibinitdelim F\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=4ca55f4db61ae3245d066a218dca72c8}{%
+           family={French},
+           familyi={F\bibinitperiod},
+           given={Kenneth\bibnamedelima R},
+           giveni={K\bibinitperiod\bibinitdelim R\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier}%
+      }
+      \strng{namehash}{ac5c181ffbfa45c593cd5483bcb59bd3}
+      \strng{fullhash}{ac5c181ffbfa45c593cd5483bcb59bd3}
+      \strng{bibnamehash}{ac5c181ffbfa45c593cd5483bcb59bd3}
+      \strng{authorbibnamehash}{ac5c181ffbfa45c593cd5483bcb59bd3}
+      \strng{authornamehash}{ac5c181ffbfa45c593cd5483bcb59bd3}
+      \strng{authorfullhash}{ac5c181ffbfa45c593cd5483bcb59bd3}
+      \field{sortinit}{F}
+      \field{sortinithash}{fb0c0faa89eb6abae8213bf60e6799ea}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of financial economics}
+      \field{number}{1}
+      \field{title}{Common risk factors in the returns on stocks and bonds}
+      \field{volume}{33}
+      \field{year}{1993}
+      \field{pages}{3\bibrangedash 56}
+      \range{pages}{54}
+    \endentry
+    \entry{novy2013other}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=6d86d3b60755ca6b922c7accd1996888}{%
+           family={Novy-Marx},
+           familyi={N\bibinithyphendelim M\bibinitperiod},
+           given={Robert},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier}%
+      }
+      \strng{namehash}{6d86d3b60755ca6b922c7accd1996888}
+      \strng{fullhash}{6d86d3b60755ca6b922c7accd1996888}
+      \strng{bibnamehash}{6d86d3b60755ca6b922c7accd1996888}
+      \strng{authorbibnamehash}{6d86d3b60755ca6b922c7accd1996888}
+      \strng{authornamehash}{6d86d3b60755ca6b922c7accd1996888}
+      \strng{authorfullhash}{6d86d3b60755ca6b922c7accd1996888}
+      \field{sortinit}{N}
+      \field{sortinithash}{98cf339a479c0454fe09153a08675a15}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Financial Economics}
+      \field{number}{1}
+      \field{title}{The other side of value: The gross profitability premium}
+      \field{volume}{108}
+      \field{year}{2013}
+      \field{pages}{1\bibrangedash 28}
+      \range{pages}{28}
+    \endentry
+    \entry{ohlson1980financial}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=e4f44a2c0fc490251b6730f1b7bc7230}{%
+           family={Ohlson},
+           familyi={O\bibinitperiod},
+           given={James\bibnamedelima A},
+           giveni={J\bibinitperiod\bibinitdelim A\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {JSTOR}%
+      }
+      \strng{namehash}{e4f44a2c0fc490251b6730f1b7bc7230}
+      \strng{fullhash}{e4f44a2c0fc490251b6730f1b7bc7230}
+      \strng{bibnamehash}{e4f44a2c0fc490251b6730f1b7bc7230}
+      \strng{authorbibnamehash}{e4f44a2c0fc490251b6730f1b7bc7230}
+      \strng{authornamehash}{e4f44a2c0fc490251b6730f1b7bc7230}
+      \strng{authorfullhash}{e4f44a2c0fc490251b6730f1b7bc7230}
+      \field{sortinit}{O}
+      \field{sortinithash}{ff8d4eeb5101e3cf3809959b3592d942}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of accounting research}
+      \field{title}{Financial ratios and the probabilistic prediction of bankruptcy}
+      \field{year}{1980}
+      \field{pages}{109\bibrangedash 131}
+      \range{pages}{23}
+    \endentry
+    \entry{pastor2003liquidity}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=1e09b4f158c68cb972eb2eb2f03b0db1}{%
+           family={P{á}stor},
+           familyi={P\bibinitperiod},
+           given={L'ubo{š}},
+           giveni={L\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=1395517a8354900f86286e02adb6299d}{%
+           family={Stambaugh},
+           familyi={S\bibinitperiod},
+           given={Robert\bibnamedelima F},
+           giveni={R\bibinitperiod\bibinitdelim F\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {The University of Chicago Press}%
+      }
+      \strng{namehash}{afbe8e05efaebcd4ad8c3bd51b57a4f8}
+      \strng{fullhash}{afbe8e05efaebcd4ad8c3bd51b57a4f8}
+      \strng{bibnamehash}{afbe8e05efaebcd4ad8c3bd51b57a4f8}
+      \strng{authorbibnamehash}{afbe8e05efaebcd4ad8c3bd51b57a4f8}
+      \strng{authornamehash}{afbe8e05efaebcd4ad8c3bd51b57a4f8}
+      \strng{authorfullhash}{afbe8e05efaebcd4ad8c3bd51b57a4f8}
+      \field{sortinit}{P}
+      \field{sortinithash}{bb5b15f2db90f7aef79bb9e83defefcb}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Political economy}
+      \field{number}{3}
+      \field{title}{Liquidity risk and expected stock returns}
+      \field{volume}{111}
+      \field{year}{2003}
+      \field{pages}{642\bibrangedash 685}
+      \range{pages}{44}
+    \endentry
+    \entry{stambaugh2012short}{article}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=1395517a8354900f86286e02adb6299d}{%
+           family={Stambaugh},
+           familyi={S\bibinitperiod},
+           given={Robert\bibnamedelima F},
+           giveni={R\bibinitperiod\bibinitdelim F\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=ca270b7ab9c330b7b62869c590fdbdc5}{%
+           family={Yu},
+           familyi={Y\bibinitperiod},
+           given={Jianfeng},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=3ea39e6dc6ef47029ae996c7e63f1a48}{%
+           family={Yuan},
+           familyi={Y\bibinitperiod},
+           given={Yu},
+           giveni={Y\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier}%
+      }
+      \strng{namehash}{fa813e4e4afd13716e68ffe66fc4cf31}
+      \strng{fullhash}{fa813e4e4afd13716e68ffe66fc4cf31}
+      \strng{bibnamehash}{fa813e4e4afd13716e68ffe66fc4cf31}
+      \strng{authorbibnamehash}{fa813e4e4afd13716e68ffe66fc4cf31}
+      \strng{authornamehash}{fa813e4e4afd13716e68ffe66fc4cf31}
+      \strng{authorfullhash}{fa813e4e4afd13716e68ffe66fc4cf31}
+      \field{sortinit}{S}
+      \field{sortinithash}{c319cff79d99c853d775f88277d4e45f}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Financial Economics}
+      \field{number}{2}
+      \field{title}{The short of it: Investor sentiment and anomalies}
+      \field{volume}{104}
+      \field{year}{2012}
+      \field{pages}{288\bibrangedash 302}
+      \range{pages}{15}
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+

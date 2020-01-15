@@ -1,0 +1,24 @@
+[1] Config.pm:304> INFO - This is Biber 2.14
+[2] Config.pm:307> INFO - Logfile is 'RevisitingtheAnomalies.blg'
+[209] biber-MSWIN64:322> INFO - === 
+[244] Biber.pm:415> INFO - Reading 'RevisitingtheAnomalies.bcf'
+[665] Biber.pm:943> INFO - Found 7 citekeys in bib section 0
+[797] Biber.pm:4256> INFO - Processing section 0
+[798] Utils.pm:75> INFO - Globbing data source 'RevisitingtheAnomalies.bib'
+[843] Utils.pm:91> INFO - Globbed data source 'RevisitingtheAnomalies.bib' to RevisitingtheAnomalies.bib
+[894] Biber.pm:4455> INFO - Looking for bibtex format file 'RevisitingtheAnomalies.bib' for section 0
+[908] bibtex.pm:1653> INFO - LaTeX decoding ...
+[977] bibtex.pm:1471> INFO - Found BibTeX data source 'RevisitingtheAnomalies.bib'
+[1222] Utils.pm:304> WARN - BibTeX subsystem: C:\Users\jackw\AppData\Local\Temp\biber_tmp_EClr\RevisitingtheAnomalies.bib_29804.utf8, line 11, warning: 1 characters of junk seen at toplevel
+[1222] Utils.pm:304> WARN - BibTeX subsystem: C:\Users\jackw\AppData\Local\Temp\biber_tmp_EClr\RevisitingtheAnomalies.bib_29804.utf8, line 21, warning: 1 characters of junk seen at toplevel
+[1223] Utils.pm:304> WARN - BibTeX subsystem: C:\Users\jackw\AppData\Local\Temp\biber_tmp_EClr\RevisitingtheAnomalies.bib_29804.utf8, line 27, warning: 1 characters of junk seen at toplevel
+[1223] Utils.pm:304> WARN - BibTeX subsystem: C:\Users\jackw\AppData\Local\Temp\biber_tmp_EClr\RevisitingtheAnomalies.bib_29804.utf8, line 37, warning: 1 characters of junk seen at toplevel
+[1223] Utils.pm:304> WARN - BibTeX subsystem: C:\Users\jackw\AppData\Local\Temp\biber_tmp_EClr\RevisitingtheAnomalies.bib_29804.utf8, line 45, warning: 1 characters of junk seen at toplevel
+[1223] Utils.pm:304> WARN - BibTeX subsystem: C:\Users\jackw\AppData\Local\Temp\biber_tmp_EClr\RevisitingtheAnomalies.bib_29804.utf8, line 55, warning: 1 characters of junk seen at toplevel
+[1321] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[1322] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[1323] Biber.pm:4084> INFO - Sorting list 'nyt/global//global/global' of type 'entry' with template 'nyt' and locale 'en-US'
+[1323] Biber.pm:4090> INFO - No sort tailoring available for locale 'en-US'
+[1355] bbl.pm:652> INFO - Writing 'RevisitingtheAnomalies.bbl' with encoding 'UTF-8'
+[1386] bbl.pm:755> INFO - Output to RevisitingtheAnomalies.bbl
+[1406] Biber.pm:128> INFO - WARNINGS: 6
