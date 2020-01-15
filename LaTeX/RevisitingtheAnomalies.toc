@@ -20,15 +20,15 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {3.1}Anomalies: Data Gathering and Variable Construction}{8}{subsection.3.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {3.1.1}Anomaly Long-Short Portfolios}{10}{subsubsection.3.1.1}%
+\contentsline {subsubsection}{\numberline {3.1.1}Anomaly Long-Short Portfolios}{11}{subsubsection.3.1.1}%
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {3.2}Additional Data}{11}{subsection.3.2}%
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{\numberline {3.2.1}Fama French Factor Data}{11}{subsubsection.3.2.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {3.2.2}Volatility Data}{11}{subsubsection.3.2.2}%
+\contentsline {subsubsection}{\numberline {3.2.2}Volatility Data}{12}{subsubsection.3.2.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {3.2.3}Economic Uncertainty Data}{11}{subsubsection.3.2.3}%
+\contentsline {subsubsection}{\numberline {3.2.3}Economic Uncertainty Data}{12}{subsubsection.3.2.3}%
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{\numberline {3.2.4}Market Liquidity Data}{12}{subsubsection.3.2.4}%
 \defcounter {refsection}{0}\relax 
@@ -56,15 +56,15 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{\numberline {5.1.2}Risk-Adjusted Return}{20}{subsubsection.5.1.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Capital Asset Pricing Model}{20}{subsubsection.5.1.2}%
+\contentsline {paragraph}{\numberline {5.1.2.1}Capital Asset Pricing Model}{20}{paragraph.5.1.2.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Fama and French Three-Factor Model}{21}{subsubsection.5.1.2}%
+\contentsline {paragraph}{\numberline {5.1.2.2}Fama and French Three-Factor Model}{21}{paragraph.5.1.2.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Fama and French Five-Factor Model}{22}{subsubsection.5.1.2}%
+\contentsline {paragraph}{\numberline {5.1.2.3}Fama and French Five-Factor Model}{22}{paragraph.5.1.2.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Fama and French Six-Factor Model}{24}{subsubsection.5.1.2}%
+\contentsline {paragraph}{\numberline {5.1.2.4}Fama and French Six-Factor Model}{24}{paragraph.5.1.2.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Fama and French Six-Factor Model + Volatility Factor}{25}{subsubsection.5.1.2}%
+\contentsline {paragraph}{\numberline {5.1.2.5}Fama and French Six-Factor Model + Volatility Factor}{26}{paragraph.5.1.2.5}%
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {5.2}Economic Policy Uncertainty}{28}{subsection.5.2}%
 \defcounter {refsection}{0}\relax 
@@ -72,38 +72,38 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{\numberline {5.2.2}Risk-Adjusted Return}{29}{subsubsection.5.2.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Capital Asset Pricing Model}{29}{subsubsection.5.2.2}%
+\contentsline {paragraph}{\numberline {5.2.2.1}Capital Asset Pricing Model}{29}{paragraph.5.2.2.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Fama and French Three-Factor Model}{30}{subsubsection.5.2.2}%
+\contentsline {paragraph}{\numberline {5.2.2.2}Fama and French Three-Factor Model}{30}{paragraph.5.2.2.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Fama and French Five-Factor Model}{31}{subsubsection.5.2.2}%
+\contentsline {paragraph}{\numberline {5.2.2.3}Fama and French Five-Factor Model}{32}{paragraph.5.2.2.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Fama and French Six-Factor Model}{33}{subsubsection.5.2.2}%
+\contentsline {paragraph}{\numberline {5.2.2.4}Fama and French Six-Factor Model}{33}{paragraph.5.2.2.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Fama and French Six-Factor Model + Volatility Factor}{35}{subsubsection.5.2.2}%
+\contentsline {paragraph}{\numberline {5.2.2.5}Fama and French Six-Factor Model + Volatility Factor}{35}{paragraph.5.2.2.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.3}Market Liquidity}{37}{subsection.5.3}%
+\contentsline {subsection}{\numberline {5.3}Market Liquidity}{38}{subsection.5.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {5.3.1}Exess Returns}{37}{subsubsection.5.3.1}%
+\contentsline {subsubsection}{\numberline {5.3.1}Exess Returns}{38}{subsubsection.5.3.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {5.3.2}Risk-Adjusted Return}{38}{subsubsection.5.3.2}%
+\contentsline {subsubsection}{\numberline {5.3.2}Risk-Adjusted Return}{39}{subsubsection.5.3.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Capital Asset Pricing Model}{38}{subsubsection.5.3.2}%
+\contentsline {paragraph}{\numberline {5.3.2.1}Capital Asset Pricing Model}{39}{paragraph.5.3.2.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Fama and French Three-Factor Model}{39}{subsubsection.5.3.2}%
+\contentsline {paragraph}{\numberline {5.3.2.2}Fama and French Three-Factor Model}{40}{paragraph.5.3.2.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Fama and French Five-Factor Model}{40}{subsubsection.5.3.2}%
+\contentsline {paragraph}{\numberline {5.3.2.3}Fama and French Five-Factor Model}{41}{paragraph.5.3.2.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Fama and French Six-Factor Model}{42}{subsubsection.5.3.2}%
+\contentsline {paragraph}{\numberline {5.3.2.4}Fama and French Six-Factor Model}{43}{paragraph.5.3.2.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Fama and French Six-Factor Model + Volatility Factor}{44}{subsubsection.5.3.2}%
+\contentsline {paragraph}{\numberline {5.3.2.5}Fama and French Six-Factor Model + Volatility Factor}{45}{paragraph.5.3.2.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6}Conclusion}{47}{section.6}%
+\contentsline {section}{\numberline {6}Conclusion}{48}{section.6}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{References}{48}{section.6}%
+\contentsline {section}{References}{49}{section.6}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{Appendix}{49}{section.6}%
+\contentsline {section}{Appendix}{50}{section.6}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {A}BLAH}{49}{subsection.Alph0.1}%
+\contentsline {subsection}{\numberline {A}BLAH}{50}{subsection.Alph0.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{Tables}{50}{subsection.Alph0.1}%
+\contentsline {section}{Tables}{51}{subsection.Alph0.1}%

@@ -85,6 +85,12 @@
 \newcommand{\sectionbreak}{\clearpage}
 \setlength{\parskip}{1em}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\setcounter{secnumdepth}{4}
+\titleformat{\paragraph}
+{\normalfont\normalsize\bfseries}{\theparagraph}{1em}{}
+\titlespacing*{\paragraph}
+{0pt}{\parskip}{\parskip}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{document}
@@ -105,8 +111,9 @@
 \Large Supervisor: Xing Han \\
 \vfill
 \normalsize
-Submitted in partial fulfilment of the requirements of the \\
-Master of Finance program \\
+Submitted in partial fulfilment of the requirements\\
+of the Master of Finance program. \\
+\vspace{0.45cm}
 Department of Accountancy and Finance \\
 \vspace{0.45cm}
 January 2020
@@ -215,7 +222,7 @@ This research explores the eleven previously documented anomalies which still ex
 To calculate the anomalies, CRSP data will be obtained from Wharton Research Data Services (WRDS). The dataset will cover the firms on the S\&P 500 index starting in 1974 and running through to 2018. How the construction is undertaken is outlined below and is based on~\cite{chu2017causal}.
 
 \paragraph*{Anomaly One: Momentum}
-The calculation of momentum uses the conventional 11 month ranking period \((t-12 \quad to \quad t-2)\) followed by a one month skip $(t-1)$ and then a one month holding period $(t)$. The skipped month is used to avoid short-run reversal effects.
+The calculation of momentum uses the conventional 11 month ranking period \\ $(t-12 \quad to \quad t-2)$ followed by a one month skip $(t-1)$ and then a one month holding period $(t)$. The skipped month is used to avoid short-run reversal effects.
 
 \paragraph*{Anomaly Two: Gross Profitability}
 In line with~\cite{novy2013other}, gross profitability will be calculated as total revenue less the cost of goods sold \((REVT_t-COGS_t)\), scaled by the value of total assets $(AT_t)$. 
