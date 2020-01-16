@@ -64,6 +64,84 @@
       \field{pages}{1593\bibrangedash 1636}
       \range{pages}{44}
     \endentry
+    \entry{barinov2018stocks}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=92c86a9a4b1e8ce16e7da818f23a24f9}{%
+           family={Barinov},
+           familyi={B\bibinitperiod},
+           given={Alexander},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier}%
+      }
+      \strng{namehash}{92c86a9a4b1e8ce16e7da818f23a24f9}
+      \strng{fullhash}{92c86a9a4b1e8ce16e7da818f23a24f9}
+      \strng{bibnamehash}{92c86a9a4b1e8ce16e7da818f23a24f9}
+      \strng{authorbibnamehash}{92c86a9a4b1e8ce16e7da818f23a24f9}
+      \strng{authornamehash}{92c86a9a4b1e8ce16e7da818f23a24f9}
+      \strng{authorfullhash}{92c86a9a4b1e8ce16e7da818f23a24f9}
+      \field{sortinit}{B}
+      \field{sortinithash}{8de16967003c7207dae369d874f1456e}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Financial Economics}
+      \field{number}{3}
+      \field{title}{Stocks with extreme past returns: Lotteries or insurance?}
+      \field{volume}{129}
+      \field{year}{2018}
+      \field{pages}{458\bibrangedash 478}
+      \range{pages}{21}
+    \endentry
+    \entry{campbell2008search}{article}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=b7ec0e33525f8b94af88e38cc709b02d}{%
+           family={Campbell},
+           familyi={C\bibinitperiod},
+           given={John\bibnamedelima Y},
+           giveni={J\bibinitperiod\bibinitdelim Y\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=59f287dde7c3a399b971ae20b2a4de14}{%
+           family={Hilscher},
+           familyi={H\bibinitperiod},
+           given={Jens},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=3122946440da8d0a3d20845b79fb6d30}{%
+           family={Szilagyi},
+           familyi={S\bibinitperiod},
+           given={Jan},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Wiley Online Library}%
+      }
+      \strng{namehash}{059ebbc6d5129111fc50b0974650f37e}
+      \strng{fullhash}{059ebbc6d5129111fc50b0974650f37e}
+      \strng{bibnamehash}{059ebbc6d5129111fc50b0974650f37e}
+      \strng{authorbibnamehash}{059ebbc6d5129111fc50b0974650f37e}
+      \strng{authornamehash}{059ebbc6d5129111fc50b0974650f37e}
+      \strng{authorfullhash}{059ebbc6d5129111fc50b0974650f37e}
+      \field{sortinit}{C}
+      \field{sortinithash}{4c244ceae61406cdc0cc2ce1cb1ff703}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{The Journal of Finance}
+      \field{number}{6}
+      \field{title}{In search of distress risk}
+      \field{volume}{63}
+      \field{year}{2008}
+      \field{pages}{2899\bibrangedash 2939}
+      \range{pages}{41}
+    \endentry
     \entry{chu2017causal}{report}{}
       \name{author}{3}{}{%
         {{un=0,uniquepart=base,hash=997a35c1d4ab4a141a7f0703000f9b9e}{%
@@ -105,6 +183,123 @@
       \field{type}{techreport}
       \field{year}{2017}
     \endentry
+    \entry{cooper2008asset}{article}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=62923f8470c03161374b8e11484517d2}{%
+           family={Cooper},
+           familyi={C\bibinitperiod},
+           given={Michael\bibnamedelima J},
+           giveni={M\bibinitperiod\bibinitdelim J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=78ad6a9786e0a3db4cc0faf4f31b624d}{%
+           family={Gulen},
+           familyi={G\bibinitperiod},
+           given={Huseyin},
+           giveni={H\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=2254d4653a7f3aedcd54a6291e4e4246}{%
+           family={Schill},
+           familyi={S\bibinitperiod},
+           given={Michael\bibnamedelima J},
+           giveni={M\bibinitperiod\bibinitdelim J\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Wiley Online Library}%
+      }
+      \strng{namehash}{41e0d4deb007059d7473a06bd2184519}
+      \strng{fullhash}{41e0d4deb007059d7473a06bd2184519}
+      \strng{bibnamehash}{41e0d4deb007059d7473a06bd2184519}
+      \strng{authorbibnamehash}{41e0d4deb007059d7473a06bd2184519}
+      \strng{authornamehash}{41e0d4deb007059d7473a06bd2184519}
+      \strng{authorfullhash}{41e0d4deb007059d7473a06bd2184519}
+      \field{sortinit}{C}
+      \field{sortinithash}{4c244ceae61406cdc0cc2ce1cb1ff703}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{The Journal of Finance}
+      \field{number}{4}
+      \field{title}{Asset growth and the cross-section of stock returns}
+      \field{volume}{63}
+      \field{year}{2008}
+      \field{pages}{1609\bibrangedash 1651}
+      \range{pages}{43}
+    \endentry
+    \entry{daniel2006market}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=2d0948b394f537d9bfcd6053690aabdd}{%
+           family={Daniel},
+           familyi={D\bibinitperiod},
+           given={Kent},
+           giveni={K\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=b04b73173bde12f6affb3df7b9d475c1}{%
+           family={Titman},
+           familyi={T\bibinitperiod},
+           given={Sheridan},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Wiley Online Library}%
+      }
+      \strng{namehash}{b0c36e067723091bd3d2c957bbce544c}
+      \strng{fullhash}{b0c36e067723091bd3d2c957bbce544c}
+      \strng{bibnamehash}{b0c36e067723091bd3d2c957bbce544c}
+      \strng{authorbibnamehash}{b0c36e067723091bd3d2c957bbce544c}
+      \strng{authornamehash}{b0c36e067723091bd3d2c957bbce544c}
+      \strng{authorfullhash}{b0c36e067723091bd3d2c957bbce544c}
+      \field{sortinit}{D}
+      \field{sortinithash}{c438b3d5d027251ba63f5ed538d98af5}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{The Journal of Finance}
+      \field{number}{4}
+      \field{title}{Market reactions to tangible and intangible information}
+      \field{volume}{61}
+      \field{year}{2006}
+      \field{pages}{1605\bibrangedash 1643}
+      \range{pages}{39}
+    \endentry
+    \entry{dichev1998risk}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=4f89a39ab127492ab3b4ca6939253703}{%
+           family={Dichev},
+           familyi={D\bibinitperiod},
+           given={Ilia\bibnamedelima D},
+           giveni={I\bibinitperiod\bibinitdelim D\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Wiley Online Library}%
+      }
+      \strng{namehash}{4f89a39ab127492ab3b4ca6939253703}
+      \strng{fullhash}{4f89a39ab127492ab3b4ca6939253703}
+      \strng{bibnamehash}{4f89a39ab127492ab3b4ca6939253703}
+      \strng{authorbibnamehash}{4f89a39ab127492ab3b4ca6939253703}
+      \strng{authornamehash}{4f89a39ab127492ab3b4ca6939253703}
+      \strng{authorfullhash}{4f89a39ab127492ab3b4ca6939253703}
+      \field{sortinit}{D}
+      \field{sortinithash}{c438b3d5d027251ba63f5ed538d98af5}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{the Journal of Finance}
+      \field{number}{3}
+      \field{title}{Is the risk of bankruptcy a systematic risk?}
+      \field{volume}{53}
+      \field{year}{1998}
+      \field{pages}{1131\bibrangedash 1147}
+      \range{pages}{17}
+    \endentry
     \entry{fama1993common}{article}{}
       \name{author}{2}{}{%
         {{un=0,uniquepart=base,hash=cf1dad75742cba1f00261a0ee70e7ba2}{%
@@ -143,6 +338,95 @@
       \field{year}{1993}
       \field{pages}{3\bibrangedash 56}
       \range{pages}{54}
+    \endentry
+    \entry{hirshleifer2004investors}{article}{}
+      \name{author}{4}{}{%
+        {{un=0,uniquepart=base,hash=8dae54e1e4ab0db00e73f56228fdded4}{%
+           family={Hirshleifer},
+           familyi={H\bibinitperiod},
+           given={David},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=ede7111684645f18f6c02f6e398c5246}{%
+           family={Hou},
+           familyi={H\bibinitperiod},
+           given={Kewei},
+           giveni={K\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=a4009619be4f63b1c639b05845900bb8}{%
+           family={Teoh},
+           familyi={T\bibinitperiod},
+           given={Siew\bibnamedelima Hong},
+           giveni={S\bibinitperiod\bibinitdelim H\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=03af099678c51f0759d65cece03666d4}{%
+           family={Zhang},
+           familyi={Z\bibinitperiod},
+           given={Yinglei},
+           giveni={Y\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier}%
+      }
+      \strng{namehash}{9e70c95b270c73dae6112dc5756129eb}
+      \strng{fullhash}{ba25fba2490b7173c91123dfac08b646}
+      \strng{bibnamehash}{ba25fba2490b7173c91123dfac08b646}
+      \strng{authorbibnamehash}{ba25fba2490b7173c91123dfac08b646}
+      \strng{authornamehash}{9e70c95b270c73dae6112dc5756129eb}
+      \strng{authorfullhash}{ba25fba2490b7173c91123dfac08b646}
+      \field{sortinit}{H}
+      \field{sortinithash}{6db6145dae8dc9e1271a8d556090b50a}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Accounting and Economics}
+      \field{title}{Do investors overvalue firms with bloated balance sheets?}
+      \field{volume}{38}
+      \field{year}{2004}
+      \field{pages}{297\bibrangedash 331}
+      \range{pages}{35}
+    \endentry
+    \entry{jegadeesh1993returns}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=425b7ee57b586395fc3a1bec6511c1c8}{%
+           family={Jegadeesh},
+           familyi={J\bibinitperiod},
+           given={Narasimhan},
+           giveni={N\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=b04b73173bde12f6affb3df7b9d475c1}{%
+           family={Titman},
+           familyi={T\bibinitperiod},
+           given={Sheridan},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Wiley Online Library}%
+      }
+      \strng{namehash}{68b842eefb0fe3530a0311863c2ed17f}
+      \strng{fullhash}{68b842eefb0fe3530a0311863c2ed17f}
+      \strng{bibnamehash}{68b842eefb0fe3530a0311863c2ed17f}
+      \strng{authorbibnamehash}{68b842eefb0fe3530a0311863c2ed17f}
+      \strng{authornamehash}{68b842eefb0fe3530a0311863c2ed17f}
+      \strng{authorfullhash}{68b842eefb0fe3530a0311863c2ed17f}
+      \field{sortinit}{J}
+      \field{sortinithash}{c45040a764d616897e7f5b30174d7b92}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{The Journal of finance}
+      \field{number}{1}
+      \field{title}{Returns to buying winners and selling losers: Implications for stock market efficiency}
+      \field{volume}{48}
+      \field{year}{1993}
+      \field{pages}{65\bibrangedash 91}
+      \range{pages}{27}
     \endentry
     \entry{novy2013other}{article}{}
       \name{author}{1}{}{%
@@ -247,6 +531,76 @@
       \field{pages}{642\bibrangedash 685}
       \range{pages}{44}
     \endentry
+    \entry{pontiff2008share}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=42c0336cd65dc5f89c0733b376ae4851}{%
+           family={Pontiff},
+           familyi={P\bibinitperiod},
+           given={Jeffrey},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=43a4f685d7ac1f0ebffbdcee07dec6c5}{%
+           family={Woodgate},
+           familyi={W\bibinitperiod},
+           given={Artemiza},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Wiley Online Library}%
+      }
+      \strng{namehash}{9bbfc9c9a173b83750030d7056dcb374}
+      \strng{fullhash}{9bbfc9c9a173b83750030d7056dcb374}
+      \strng{bibnamehash}{9bbfc9c9a173b83750030d7056dcb374}
+      \strng{authorbibnamehash}{9bbfc9c9a173b83750030d7056dcb374}
+      \strng{authornamehash}{9bbfc9c9a173b83750030d7056dcb374}
+      \strng{authorfullhash}{9bbfc9c9a173b83750030d7056dcb374}
+      \field{sortinit}{P}
+      \field{sortinithash}{bb5b15f2db90f7aef79bb9e83defefcb}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{The Journal of Finance}
+      \field{number}{2}
+      \field{title}{Share issuance and cross-sectional returns}
+      \field{volume}{63}
+      \field{year}{2008}
+      \field{pages}{921\bibrangedash 945}
+      \range{pages}{25}
+    \endentry
+    \entry{sloan1996stock}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=f58940f2e46e9afba09632cfa2f2e728}{%
+           family={Sloan},
+           familyi={S\bibinitperiod},
+           given={Richard\bibnamedelima G},
+           giveni={R\bibinitperiod\bibinitdelim G\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {JSTOR}%
+      }
+      \strng{namehash}{f58940f2e46e9afba09632cfa2f2e728}
+      \strng{fullhash}{f58940f2e46e9afba09632cfa2f2e728}
+      \strng{bibnamehash}{f58940f2e46e9afba09632cfa2f2e728}
+      \strng{authorbibnamehash}{f58940f2e46e9afba09632cfa2f2e728}
+      \strng{authornamehash}{f58940f2e46e9afba09632cfa2f2e728}
+      \strng{authorfullhash}{f58940f2e46e9afba09632cfa2f2e728}
+      \field{sortinit}{S}
+      \field{sortinithash}{c319cff79d99c853d775f88277d4e45f}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Accounting review}
+      \field{title}{Do stock prices fully reflect information in accruals and cash flows about future earnings?}
+      \field{year}{1996}
+      \field{pages}{289\bibrangedash 315}
+      \range{pages}{27}
+    \endentry
     \entry{stambaugh2012short}{article}{}
       \name{author}{3}{}{%
         {{un=0,uniquepart=base,hash=1395517a8354900f86286e02adb6299d}{%
@@ -291,6 +645,51 @@
       \field{year}{2012}
       \field{pages}{288\bibrangedash 302}
       \range{pages}{15}
+    \endentry
+    \entry{titman2004capital}{article}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=b04b73173bde12f6affb3df7b9d475c1}{%
+           family={Titman},
+           familyi={T\bibinitperiod},
+           given={Sheridan},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=7e4382d77b504cbc3c3a6ca1f2333bf1}{%
+           family={Wei},
+           familyi={W\bibinitperiod},
+           given={KC\bibnamedelima John},
+           giveni={K\bibinitperiod\bibinitdelim J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=5c29d069b690134fb571a8bd4f511178}{%
+           family={Xie},
+           familyi={X\bibinitperiod},
+           given={Feixue},
+           giveni={F\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Cambridge University Press}%
+      }
+      \strng{namehash}{0529218021a19151e8044e9a07953447}
+      \strng{fullhash}{0529218021a19151e8044e9a07953447}
+      \strng{bibnamehash}{0529218021a19151e8044e9a07953447}
+      \strng{authorbibnamehash}{0529218021a19151e8044e9a07953447}
+      \strng{authornamehash}{0529218021a19151e8044e9a07953447}
+      \strng{authorfullhash}{0529218021a19151e8044e9a07953447}
+      \field{sortinit}{T}
+      \field{sortinithash}{51f9faf24c60c62ca764a77f78cf5666}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of financial and Quantitative Analysis}
+      \field{number}{4}
+      \field{title}{Capital investments and stock returns}
+      \field{volume}{39}
+      \field{year}{2004}
+      \field{pages}{677\bibrangedash 700}
+      \range{pages}{24}
     \endentry
   \enddatalist
 \endrefsection

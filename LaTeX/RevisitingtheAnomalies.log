@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7250 64-bit) (preloaded format=pdflatex 2020.1.13)  15 JAN 2020 22:32
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7250 64-bit) (preloaded format=pdflatex 2020.1.13)  16 JAN 2020 13:42
 entering extended mode
 **c:/Users/jackw/OneDrive/Documents/2019/MFINC/Code/LaTeX/RevisitingtheAnomalies.tex
 (c:/Users/jackw/OneDrive/Documents/2019/MFINC/Code/LaTeX/RevisitingtheAnomalies.tex
@@ -762,7 +762,7 @@ Package biblatex Info: Reference segment=0 on input line 96.
 Package: epstopdf-base 2019-12-09 v2.10 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
 )
-<Business School.pdf, id=171, 375.4025pt x 281.05pt>
+<Business School.pdf, id=167, 375.4025pt x 281.05pt>
 File: Business School.pdf Graphic file (type pdf)
 <use Business School.pdf>
 Package pdftex.def Info: Business School.pdf  used on input line 101.
@@ -813,23 +813,17 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 \tf@toc=\write7
 \openout7 = `RevisitingtheAnomalies.toc'.
 
- [4] [5] (RevisitingtheAnomalies.lof)
-\tf@lof=\write8
-\openout8 = `RevisitingtheAnomalies.lof'.
+ [4] [5] (RevisitingtheAnomalies.lot [6
 
- [6
+] [7])
+\tf@lot=\write8
+\openout8 = `RevisitingtheAnomalies.lot'.
 
-] (RevisitingtheAnomalies.lot [7
-
-] [8])
-\tf@lot=\write9
-\openout9 = `RevisitingtheAnomalies.lot'.
-
- [9] [10]pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
+ [8] [9]pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.170 \section{Literature Review}
-                                 \label{sec:Lit Review} [1
+                                 \label{sec:lit_review} [1
 
 ] [2
 
@@ -846,18 +840,16 @@ l.170 \section{Literature Review}
 
 ] [49
 
-] AED endfloat: Processing end Figures and Tables [50
+] [50] AED endfloat: Processing end Figures and Tables [51
 
-] (RevisitingtheAnomalies.ttt [51
+] (RevisitingtheAnomalies.ttt [52
 
 
 
 ]
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <5> on input line 38.
- [52
-
-] [53
+ [53
 
 ] [54
 
@@ -871,14 +863,14 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 
 ] [59
 
+] [60
+
 ]
 Underfull \hbox (badness 10000) in paragraph at lines 313--345
 [][]
  []
 
-[60
-
-] [61
+[61
 
 ] [62
 
@@ -888,64 +880,66 @@ Underfull \hbox (badness 10000) in paragraph at lines 313--345
 
 ] [65
 
+] [66
+
 ]
 Underfull \hbox (badness 10000) in paragraph at lines 532--564
 [][]
  []
 
-[66
+[67
 
-] [67
+] [68
 
 ]
 Underfull \hbox (badness 10000) in paragraph at lines 606--638
 [][]
  []
 
-[68
-
-] [69
+[69
 
 ] [70
 
 ] [71
+
+] [72
 
 ]
 Underfull \hbox (badness 10000) in paragraph at lines 751--783
 [][]
  []
 
-[72
+[73
 
-] [73
+] [74
 
-]) [74
+]) [75
 
 ]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 552.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 552.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 553.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 553.
  (RevisitingtheAnomalies.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 552.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 552.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 553.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 553.
 Package rerunfilecheck Info: File `RevisitingtheAnomalies.out' has not changed.
-(rerunfilecheck)             Checksum: 88C7EE65F130817467893518C4F6442A;3454.
+(rerunfilecheck)             Checksum: 506D0F53ACC4497315250059B8FF0F0F;3389.
 Package logreq Info: Writing requests to 'RevisitingtheAnomalies.run.xml'.
 \openout1 = `RevisitingtheAnomalies.run.xml'.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 552.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 553.
  ) 
 Here is how much of TeX's memory you used:
- 18787 strings out of 492483
- 337719 string characters out of 3121589
- 908439 words of memory out of 3000000
- 22629 multiletter control sequences out of 15000+200000
+ 18819 strings out of 492483
+ 338944 string characters out of 3121589
+ 909458 words of memory out of 3000000
+ 22655 multiletter control sequences out of 15000+200000
  63625 words of font info for 58 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  47i,12n,50p,2851b,4720s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Users/jackw/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/lm/lm-ec.enc}{C:/Users/jackw/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/lm/lm-mathit.enc}{C:/Users/jackw/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/lm/lm-rm.enc}{C:/Users/jackw/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/lm/lm-mathsy.enc}<C:/Users/jackw/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmbx12.pfb><C:/Users/jackw/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmmi12.pfb><C:/Users/jackw/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmmi6.pfb><C:/Users/jackw/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmmi8.pfb><C:/Users/jackw/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmr12.pfb><C:/Users/jackw/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmr17.pfb><C:/Users/jackw/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmr8.pfb><C:/Users/jackw/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmri12.pfb><C:/Users/jackw/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmsy10.pfb><C:/Users/jackw/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmsy8.pfb>
-Output written on RevisitingtheAnomalies.pdf (85 pages, 501190 bytes).
+Output written on RevisitingtheAnomalies.pdf (85 pages, 511375 bytes).
 PDF statistics:
- 822 PDF objects out of 1000 (max. 8388607)
- 169 named destinations out of 1000 (max. 500000)
- 350 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 859 PDF objects out of 1000 (max. 8388607)
+ 178 named destinations out of 1000 (max. 500000)
+ 342 words of extra memory for PDF output out of 10000 (max. 10000000)
 

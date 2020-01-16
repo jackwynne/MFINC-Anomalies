@@ -2574,13 +2574,26 @@
     <bcf:datasource type="file" datatype="bibtex">RevisitingtheAnomalies.bib</bcf:datasource>
   </bcf:bibdata>
   <bcf:section number="0">
-    <bcf:citekey order="1">fama1993common</bcf:citekey>
+    <bcf:citekey order="1">barinov2018stocks</bcf:citekey>
     <bcf:citekey order="2">stambaugh2012short</bcf:citekey>
     <bcf:citekey order="3">chu2017causal</bcf:citekey>
-    <bcf:citekey order="4">novy2013other</bcf:citekey>
-    <bcf:citekey order="5">ohlson1980financial</bcf:citekey>
-    <bcf:citekey order="6">baker2016measuring</bcf:citekey>
-    <bcf:citekey order="7">pastor2003liquidity</bcf:citekey>
+    <bcf:citekey order="4">jegadeesh1993returns</bcf:citekey>
+    <bcf:citekey order="5">novy2013other</bcf:citekey>
+    <bcf:citekey order="6">cooper2008asset</bcf:citekey>
+    <bcf:citekey order="7">titman2004capital</bcf:citekey>
+    <bcf:citekey order="8">hirshleifer2004investors</bcf:citekey>
+    <bcf:citekey order="9">sloan1996stock</bcf:citekey>
+    <bcf:citekey order="10">pontiff2008share</bcf:citekey>
+    <bcf:citekey order="11">daniel2006market</bcf:citekey>
+    <bcf:citekey order="12">campbell2008search</bcf:citekey>
+    <bcf:citekey order="13">dichev1998risk</bcf:citekey>
+    <bcf:citekey order="14">fama1993common</bcf:citekey>
+    <bcf:citekey order="15">stambaugh2012short</bcf:citekey>
+    <bcf:citekey order="16">chu2017causal</bcf:citekey>
+    <bcf:citekey order="17">novy2013other</bcf:citekey>
+    <bcf:citekey order="18">ohlson1980financial</bcf:citekey>
+    <bcf:citekey order="19">baker2016measuring</bcf:citekey>
+    <bcf:citekey order="20">pastor2003liquidity</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="nyt">

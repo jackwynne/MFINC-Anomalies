@@ -2,42 +2,41 @@
 \BOOKMARK [1][]{Doc-Start}{Abstract}{title.0}% 2
 \BOOKMARK [1][]{Doc-Start}{Acknowledgements}{title.0}% 3
 \BOOKMARK [1][]{Table of Contents.1}{Table of Contents}{title.0}% 4
-\BOOKMARK [1][]{List of Figures.1}{List of Figures}{title.0}% 5
-\BOOKMARK [1][]{List of Tables.1}{List of Tables}{title.0}% 6
-\BOOKMARK [1][]{section.1}{1 Introduction}{title.0}% 7
-\BOOKMARK [1][]{section.2}{2 Literature Review}{title.0}% 8
-\BOOKMARK [2][-]{subsection.2.1}{2.1 Stocks with Extreme Past Returns: Lotteries or Insurance?}{section.2}% 9
-\BOOKMARK [2][-]{subsection.2.2}{2.2 The Short of It: Investor Sentiment and Anomalies}{section.2}% 10
-\BOOKMARK [2][-]{subsection.2.3}{2.3 The Causal Effect of Limits to Arbitrage on Asset Pricing Anomalies}{section.2}% 11
-\BOOKMARK [2][-]{subsection.2.4}{2.4 Additional Literature Relating to the Pricing Anomalies}{section.2}% 12
-\BOOKMARK [1][]{section.3}{3 Data: Anomalies, Volatility, Economic Policy Uncertainty and Liquidity}{title.0}% 13
-\BOOKMARK [2][-]{subsection.3.1}{3.1 Anomalies: Data Gathering and Variable Construction}{section.3}% 14
-\BOOKMARK [3][-]{subsubsection.3.1.1}{3.1.1 Anomaly Long-Short Portfolios}{subsection.3.1}% 15
-\BOOKMARK [2][-]{subsection.3.2}{3.2 Additional Data}{section.3}% 16
-\BOOKMARK [3][-]{subsubsection.3.2.1}{3.2.1 Fama French Factor Data}{subsection.3.2}% 17
-\BOOKMARK [3][-]{subsubsection.3.2.2}{3.2.2 Volatility Data}{subsection.3.2}% 18
-\BOOKMARK [3][-]{subsubsection.3.2.3}{3.2.3 Economic Uncertainty Data}{subsection.3.2}% 19
-\BOOKMARK [3][-]{subsubsection.3.2.4}{3.2.4 Market Liquidity Data}{subsection.3.2}% 20
-\BOOKMARK [1][]{section.4}{4 Portfolio Performance: Unconditional Pattern}{title.0}% 21
-\BOOKMARK [2][-]{subsection.4.1}{4.1 Excess Return }{section.4}% 22
-\BOOKMARK [2][-]{subsection.4.2}{4.2 Risk-Adjusted Returns}{section.4}% 23
-\BOOKMARK [3][-]{subsubsection.4.2.1}{4.2.1 Capital Asset Pricing Model}{subsection.4.2}% 24
-\BOOKMARK [3][-]{subsubsection.4.2.2}{4.2.2 Fama and French Three-Factor Model}{subsection.4.2}% 25
-\BOOKMARK [3][-]{subsubsection.4.2.3}{4.2.3 Fama and French Five-Factor Model}{subsection.4.2}% 26
-\BOOKMARK [3][-]{subsubsection.4.2.4}{4.2.4 Fama and French Six-Factor Model}{subsection.4.2}% 27
-\BOOKMARK [3][-]{subsubsection.4.2.5}{4.2.5 Fama and French Six-Factor Model + Volatility Factor}{subsection.4.2}% 28
-\BOOKMARK [1][]{section.5}{5 Portfolio Performance: Conditional Pattern}{title.0}% 29
-\BOOKMARK [2][-]{subsection.5.1}{5.1 Volatilty}{section.5}% 30
-\BOOKMARK [3][-]{subsubsection.5.1.1}{5.1.1 Excess Returns}{subsection.5.1}% 31
-\BOOKMARK [3][-]{subsubsection.5.1.2}{5.1.2 Risk-Adjusted Return}{subsection.5.1}% 32
-\BOOKMARK [2][-]{subsection.5.2}{5.2 Economic Policy Uncertainty}{section.5}% 33
-\BOOKMARK [3][-]{subsubsection.5.2.1}{5.2.1 Excess Returns}{subsection.5.2}% 34
-\BOOKMARK [3][-]{subsubsection.5.2.2}{5.2.2 Risk-Adjusted Return}{subsection.5.2}% 35
-\BOOKMARK [2][-]{subsection.5.3}{5.3 Market Liquidity}{section.5}% 36
-\BOOKMARK [3][-]{subsubsection.5.3.1}{5.3.1 Exess Returns}{subsection.5.3}% 37
-\BOOKMARK [3][-]{subsubsection.5.3.2}{5.3.2 Risk-Adjusted Return}{subsection.5.3}% 38
-\BOOKMARK [1][]{section.6}{6 Conclusion}{title.0}% 39
-\BOOKMARK [1][]{section.6}{References}{title.0}% 40
-\BOOKMARK [1][]{section.6}{Appendix}{title.0}% 41
-\BOOKMARK [2][-]{subsection.Alph0.1}{A BLAH}{section.6}% 42
-\BOOKMARK [1][]{subsection.Alph0.1}{Tables}{title.0}% 43
+\BOOKMARK [1][]{List of Tables.1}{List of Tables}{title.0}% 5
+\BOOKMARK [1][]{section.1}{1 Introduction}{title.0}% 6
+\BOOKMARK [1][]{section.2}{2 Literature Review}{title.0}% 7
+\BOOKMARK [2][-]{subsection.2.1}{2.1 Stocks with Extreme Past Returns: Lotteries or Insurance?}{section.2}% 8
+\BOOKMARK [2][-]{subsection.2.2}{2.2 The Short of It: Investor Sentiment and Anomalies}{section.2}% 9
+\BOOKMARK [2][-]{subsection.2.3}{2.3 The Causal Effect of Limits to Arbitrage on Asset Pricing Anomalies}{section.2}% 10
+\BOOKMARK [2][-]{subsection.2.4}{2.4 Additional Literature Relating to the Pricing Anomalies}{section.2}% 11
+\BOOKMARK [1][]{section.3}{3 Data: Anomalies, Volatility, Economic Policy Uncertainty and Liquidity}{title.0}% 12
+\BOOKMARK [2][-]{subsection.3.1}{3.1 Anomalies: Data Gathering and Variable Construction}{section.3}% 13
+\BOOKMARK [3][-]{subsubsection.3.1.1}{3.1.1 Anomaly Long-Short Portfolios}{subsection.3.1}% 14
+\BOOKMARK [2][-]{subsection.3.2}{3.2 Additional Data}{section.3}% 15
+\BOOKMARK [3][-]{subsubsection.3.2.1}{3.2.1 Fama French Factor Data}{subsection.3.2}% 16
+\BOOKMARK [3][-]{subsubsection.3.2.2}{3.2.2 Volatility Data}{subsection.3.2}% 17
+\BOOKMARK [3][-]{subsubsection.3.2.3}{3.2.3 Economic Uncertainty Data}{subsection.3.2}% 18
+\BOOKMARK [3][-]{subsubsection.3.2.4}{3.2.4 Market Liquidity Data}{subsection.3.2}% 19
+\BOOKMARK [1][]{section.4}{4 Portfolio Performance: Unconditional Pattern}{title.0}% 20
+\BOOKMARK [2][-]{subsection.4.1}{4.1 Excess Return }{section.4}% 21
+\BOOKMARK [2][-]{subsection.4.2}{4.2 Risk-Adjusted Returns}{section.4}% 22
+\BOOKMARK [3][-]{subsubsection.4.2.1}{4.2.1 Capital Asset Pricing Model}{subsection.4.2}% 23
+\BOOKMARK [3][-]{subsubsection.4.2.2}{4.2.2 Fama and French Three-Factor Model}{subsection.4.2}% 24
+\BOOKMARK [3][-]{subsubsection.4.2.3}{4.2.3 Fama and French Five-Factor Model}{subsection.4.2}% 25
+\BOOKMARK [3][-]{subsubsection.4.2.4}{4.2.4 Fama and French Six-Factor Model}{subsection.4.2}% 26
+\BOOKMARK [3][-]{subsubsection.4.2.5}{4.2.5 Fama and French Six-Factor Model + Volatility Factor}{subsection.4.2}% 27
+\BOOKMARK [1][]{section.5}{5 Portfolio Performance: Conditional Pattern}{title.0}% 28
+\BOOKMARK [2][-]{subsection.5.1}{5.1 Volatilty}{section.5}% 29
+\BOOKMARK [3][-]{subsubsection.5.1.1}{5.1.1 Excess Returns}{subsection.5.1}% 30
+\BOOKMARK [3][-]{subsubsection.5.1.2}{5.1.2 Risk-Adjusted Return}{subsection.5.1}% 31
+\BOOKMARK [2][-]{subsection.5.2}{5.2 Economic Policy Uncertainty}{section.5}% 32
+\BOOKMARK [3][-]{subsubsection.5.2.1}{5.2.1 Excess Returns}{subsection.5.2}% 33
+\BOOKMARK [3][-]{subsubsection.5.2.2}{5.2.2 Risk-Adjusted Return}{subsection.5.2}% 34
+\BOOKMARK [2][-]{subsection.5.3}{5.3 Market Liquidity}{section.5}% 35
+\BOOKMARK [3][-]{subsubsection.5.3.1}{5.3.1 Exess Returns}{subsection.5.3}% 36
+\BOOKMARK [3][-]{subsubsection.5.3.2}{5.3.2 Risk-Adjusted Return}{subsection.5.3}% 37
+\BOOKMARK [1][]{section.6}{6 Conclusion}{title.0}% 38
+\BOOKMARK [1][]{section.6}{References}{title.0}% 39
+\BOOKMARK [1][]{section.6}{Appendix}{title.0}% 40
+\BOOKMARK [2][-]{subsection.Alph0.1}{A BLAH}{section.6}% 41
+\BOOKMARK [1][]{subsection.Alph0.1}{Tables}{title.0}% 42
