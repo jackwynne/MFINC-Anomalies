@@ -31,10 +31,10 @@
 \end{table}
 \efloatseparator
  
-\begin{table}[h]
+\begin{table}[htbp]
 \scriptsize
 \caption{\newline Capital Asset Pricing Model (CAPM) regression of all eleven portfolio returns. All t-statistics are Newy-West t-statistics.}
-\label{tab:Table 2}
+\label{tab:capm}
 \begin{tabular}{@{}lrr@{}}
 \toprule
 & $\alpha$ & $\beta_{mkt}$ \\ \midrule
@@ -64,10 +64,10 @@
 \end{table}
 \efloatseparator
  
-\begin{table}[h]
+\begin{table}[htbp]
 \scriptsize
 \caption{\newline Fama and French Three-Factor (FF3) regression of all eleven portfolio returns. All t-statistics are Newy-West t-statistics.}
-\label{tab:Table 3}
+\label{tab:ff3}
 \resizebox{\textwidth}{!}{%
 \begin{tabular}{@{}lrrrr@{}}
 \toprule
@@ -99,10 +99,10 @@
 \end{table}
 \efloatseparator
  
-\begin{table}[h]
+\begin{table}[htbp]
 \scriptsize
 \caption{\newline Fama and French Five-Factor (FF5) regression of all eleven portfolio returns. All t-statistics are Newy-West t-statistics.}
-\label{tab:Table 4}
+\label{tab:ff5}
 \begin{tabular}{@{}lrrrrrr@{}}
 \toprule
 & \multicolumn{1}{l}{$\alpha$} & \multicolumn{1}{l}{$\beta_{mkt}$} & \multicolumn{1}{l}{$\beta_{smb}$} & \multicolumn{1}{l}{$\beta_{hml}$} & \multicolumn{1}{l}{$\beta_{rmw}$} & \multicolumn{1}{l}{$\beta_{cma}$} \\ \midrule
@@ -132,10 +132,10 @@
 \end{table}
 \efloatseparator
  
-\begin{table}[h]
+\begin{sidewaystable}[htbp]
 \scriptsize
 \caption{\newline Fama and French Six-Factor (FF6) regression of all eleven portfolio returns. All t-statistics are Newy-West t-statistics.}
-\label{tab:Table 5}
+\label{tab:ff6}
 \resizebox{\textwidth}{!}{%
 \begin{tabular}{@{}lrrrrrrr@{}}
 \toprule
@@ -164,13 +164,13 @@
 & 2.1030 & -2.3945 & -2.6478 & -2.3906 & 6.8411 & 6.4824 & 0.4867 \\ \bottomrule
 \end{tabular}%
 }
-\end{table}
+\end{sidewaystable}
 \efloatseparator
  
-\begin{table}[h]
+\begin{sidewaystable}[htbp]
 \scriptsize
 \caption{\newline Regression of the six Fama and French factors plus the volatility factor of all eleven portfolio returns. All t-statistics are Newy-West t-statistics.}
-\label{tab:Table 6}
+\label{tab:ff6v}
 \resizebox{\textwidth}{!}{%
 \begin{tabular}{@{}lrrrrrrrr@{}}
 \toprule
@@ -199,7 +199,7 @@
 & 1.1127 & -2.4164 & -2.6335 & -2.2845 & 6.8518 & 6.3380 & 0.4385 & -0.3190 \\ \bottomrule
 \end{tabular}%
 }
-\end{table}
+\end{sidewaystable}
 \efloatseparator
  
 \begin{table}[hbt]
@@ -236,7 +236,7 @@ Stock Issuance & 0.0102 & 0.0046 & 0.0056 & 0.0070 & 0.0042 & 0.0027 \\
 \end{table}
 \efloatseparator
  
-\begin{table}[h]
+\begin{table}[htbp]
 \caption{\newline The estimates and t-statistics for the capital asset pricing model for each of the eleven anomalies portfolios for periods of high and low volatility.  All t-statistics are Newy-West t-statistics.}
 \begin{tabular}{lrrrrr}
 \toprule
@@ -271,7 +271,7 @@ Stock Issuance & 0.0082 & -0.0040 &       & 0.0034 & -0.0014 \\
 \end{table}
 \efloatseparator
  
-\begin{table}[h]
+\begin{table}[htbp]
 \caption{\newline The estimates and t-statistics for the Fama and French three-factor model for each of the eleven anomalies portfolios for periods of high and low volatility.  All t-statistics are Newy-West t-statistics.}
 \resizebox{\textwidth}{!}{%
 \begin{tabular}{lrrrrlrrrr}
@@ -308,7 +308,7 @@ Stock Issuance & 0.0086 & -0.0034 & -0.0024 & 0.0012 &       & 0.0031 & 0.0000 &
 \end{table}
 \efloatseparator
  
-\begin{table}[h]
+\begin{sidewaystable}[htbp]
 \caption{\newline The estimates and t-statistics for the Fama and French five-factor model for each of the eleven anomalies portfolios for periods of high and low volatility.  All t-statistics are Newy-West t-statistics.}
 \resizebox{\textwidth}{!}{%
 \begin{tabular}{lrrrrrrrrrrrrr}
@@ -342,10 +342,10 @@ Stock Issuance & 0.0034 & -0.0014 & -0.0007 & -0.0027 & 0.0048 & 0.0064 &       
 \end{tabular}%
 }
 \label{tab:vol-ff5}%
-\end{table}
+\end{sidewaystable}
 \efloatseparator
  
-\begin{table}[h]
+\begin{sidewaystable}[htbp]
 \caption{\newline The estimates and t-statistics for the Fama and French six-factor model for each of the eleven anomalies portfolios for periods of high and low volatility.  All t-statistics are Newy-West t-statistics.}
 \resizebox{\textwidth}{!}{%
 \begin{tabular}{lrrrrrrrrrrrrrrr}
@@ -379,10 +379,10 @@ Stock Issuance & 0.0034 & -0.0012 & -0.0008 & -0.0024 & 0.0048 & 0.0063 & 0.0364
 \end{tabular}%
 }
 \label{tab:vol-ff6}%
-\end{table}
+\end{sidewaystable}
 \efloatseparator
  
-\begin{table}[h]
+\begin{sidewaystable}[htbp]
 \caption{\newline The estimates and t-statistics for the Fama and French six-factor model plus the volatility factor for each of the eleven anomalies portfolios for periods of high and low volatility.  All t-statistics are Newy-West t-statistics.}
 \resizebox{\textwidth}{!}{%
 \begin{tabular}{lrrrrrrrrrrrrrrrrr}
@@ -416,10 +416,10 @@ Stock Issuance & 0.0230 & -0.0018 & -0.0009 & -0.0028 & 0.0048 & 0.0063 & 0.0167
 \end{tabular}%
 }
 \label{tab:vol-ff6v}%
-\end{table}
+\end{sidewaystable}
 \efloatseparator
  
-\begin{table}[h]
+\begin{table}[htbp]
 \scriptsize
 \caption{\newline The means and standard deviations for each of the eleven anomalies portfolios for periods of high and low economic policy uncertainty.}
 \label{tab:epu-stats}
@@ -455,7 +455,7 @@ Stock Issuance & 0.0146 & 0.0100 & 0.0046 & 0.0100 & 0.0038 & 0.0061 \\
 \end{table}
 \efloatseparator
  
-\begin{table}[h]
+\begin{table}[htbp]
 \caption{\newline The estimates and t-statistics for the capital asset pricing model for each of the eleven anomalies portfolios for periods of high and low economic policy uncertainty.  All t-statistics are Newy-West t-statistics.}
 \begin{tabular}{lrrrrr}
 \toprule
@@ -490,7 +490,7 @@ Stock Issuance & 0.0088 & -0.0032 &       & 0.0070 & -0.0028 \\
 \end{table}
 \efloatseparator
  
-\begin{table}[h]
+\begin{table}[htbp]
 \caption{\newline The estimates and t-statistics for the Fama and French three-factor model for each of the eleven anomalies portfolios for periods of high and low economic policy uncertainty.  All t-statistics are Newy-West t-statistics.}
 \resizebox{\textwidth}{!}{%
 \begin{tabular}{lrrrrlrrrr}
@@ -527,7 +527,7 @@ Stock Issuance & 0.0090 & -0.0025 & -0.0043 & -0.0014 &       & 0.0051 & -0.0019
 \end{table}
 \efloatseparator
  
-\begin{table}[h]
+\begin{sidewaystable}[htbp]
 \caption{\newline The estimates and t-statistics for the Fama and French five-factor model for each of the eleven anomalies portfolios for periods of high and low economic policy uncertainty.  All t-statistics are Newy-West t-statistics.}
 \resizebox{\textwidth}{!}{%
 \begin{tabular}{lrrrrrrrrrrrrr}
@@ -561,10 +561,10 @@ Stock Issuance & 0.0045 & -0.0015 & -0.0030 & -0.0019 & 0.0053 & 0.0054 &       
 \end{tabular}%
 }
 \label{tab:epu-ff5}%
-\end{table}
+\end{sidewaystable}
 \efloatseparator
  
-\begin{table}[h]
+\begin{sidewaystable}[htbp]
 \caption{\newline The estimates and t-statistics for the Fama and French six-factor model for each of the eleven anomalies portfolios for periods of high and low economic policy uncertainty.  All t-statistics are Newy-West t-statistics.}
 \resizebox{\textwidth}{!}{%
 \begin{tabular}{lrrrrrrrrrrrrrrr}
@@ -598,10 +598,10 @@ Stock Issuance & 0.0046 & -0.0014 & -0.0030 & -0.0019 & 0.0051 & 0.0051 & 0.0233
 \end{tabular}%
 }
 \label{tab:epu-ff6}%
-\end{table}
+\end{sidewaystable}
 \efloatseparator
  
-\begin{table}[h]
+\begin{sidewaystable}[htbp]
 \caption{\newline The estimates and t-statistics for the Fama and French six-factor model and the economic policy uncertainty factor for each of the eleven anomalies portfolios for periods of high and low economic policy uncertainty.  All t-statistics are Newy-West t-statistics.}
 \resizebox{\textwidth}{!}{%
 \begin{tabular}{lrrrrrrrrrrrrrrrrr}
@@ -635,7 +635,7 @@ Stock Issuance & 0.0144 & -0.0018 & -0.0030 & -0.0024 & 0.0054 & 0.0056 & -0.006
 \end{tabular}%
 }
 \label{tab:epu-ff6v}%
-\end{table}
+\end{sidewaystable}
 \efloatseparator
  
 \begin{table}[hbt]
@@ -674,7 +674,7 @@ Stock Issuance & 0.0138 & 0.0108 & 0.0029 & 0.0071 & -0.0020 & 0.0091 \\
 \end{table}
 \efloatseparator
  
-\begin{table}[h]
+\begin{table}[htbp]
 \caption{\newline The estimates and t-statistics for the capital asset pricing model for each of the eleven anomalies portfolios for periods of high and low market liquidity.  All t-statistics are Newy-West t-statistics.}
 \begin{tabular}{lrrrrr}
 \toprule
@@ -709,7 +709,7 @@ Stock Issuance & 0.0064 & -0.0030 &       & 0.0096 & -0.0037 \\
 \end{table}
 \efloatseparator
  
-\begin{table}[h]
+\begin{table}[htbp]
 \caption{\newline The estimates and t-statistics for the Fama and French three-factor model for each of the eleven anomalies portfolios for periods of high and low market liquidity.  All t-statistics are Newy-West t-statistics.}
 \resizebox{\textwidth}{!}{%
 \begin{tabular}{lrrrrlrrrr}
@@ -746,7 +746,7 @@ Stock Issuance & 0.0074 & -0.0026 & -0.0037 & -0.0002 &       & 0.0083 & -0.0032
 \end{table}
 \efloatseparator
  
-\begin{table}[h]
+\begin{sidewaystable}[htbp]
 \caption{\newline The estimates and t-statistics for the Fama and French five-factor model for each of the eleven anomalies portfolios for periods of high and low market liquidity.  All t-statistics are Newy-West t-statistics.}
 \resizebox{\textwidth}{!}{%
 \begin{tabular}{lrrrrrrrrrrrrr}
@@ -780,10 +780,10 @@ Stock Issuance & 0.0042 & -0.0013 & -0.0028 & -0.0030 & 0.0045 & 0.0068 &       
 \end{tabular}%
 }
 \label{tab:liq-ff5}%
-\end{table}
+\end{sidewaystable}
 \efloatseparator
  
-\begin{table}[h]
+\begin{sidewaystable}[htbp]
 \caption{\newline The estimates and t-statistics for the Fama and French six-factor model for each of the eleven anomalies portfolios for periods of high and low market liquidity.  All t-statistics are Newy-West t-statistics.}
 \resizebox{\textwidth}{!}{%
 \begin{tabular}{lrrrrrrrrrrrrrrr}
@@ -817,10 +817,10 @@ Stock Issuance & 0.0041 & -0.0013 & -0.0028 & -0.0029 & 0.0045 & 0.0065 & 0.0150
 \end{tabular}%
 }
 \label{tab:liq-ff6}%
-\end{table}
+\end{sidewaystable}
 \efloatseparator
  
-\begin{table}[h]
+\begin{sidewaystable}[htbp]
 \caption{\newline The estimates and t-statistics for the Fama and French six-factor model and the market liquidity factor for each of the eleven anomalies portfolios for periods of high and low market liquidity.  All t-statistics are Newy-West t-statistics.}
 \resizebox{\textwidth}{!}{%
 \begin{tabular}{lrrrrrrrrrrrrrrrrr}
@@ -854,4 +854,4 @@ Stock Issuance & -0.0008 & -0.0013 & -0.0028 & -0.0027 & 0.0044 & 0.0064 & 0.019
 \end{tabular}%
 }
 \label{tab:liq-ff6v}%
-\end{table}
+\end{sidewaystable}
