@@ -1,75 +1,37 @@
 [0] Config.pm:304> INFO - This is Biber 2.14
-[1] Config.pm:307> INFO - Logfile is 'RevisitingtheAnomalies.blg'
-<<<<<<< HEAD
-[308] biber-MSWIN64:322> INFO - === 
-[345] Biber.pm:415> INFO - Reading 'RevisitingtheAnomalies.bcf'
-[661] Biber.pm:943> INFO - Found 17 citekeys in bib section 0
-[697] Biber.pm:4256> INFO - Processing section 0
-[698] Utils.pm:75> INFO - Globbing data source 'RevisitingtheAnomalies.bib'
-[715] Utils.pm:91> INFO - Globbed data source 'RevisitingtheAnomalies.bib' to RevisitingtheAnomalies.bib
-[743] Biber.pm:4455> INFO - Looking for bibtex format file 'RevisitingtheAnomalies.bib' for section 0
-[751] bibtex.pm:1653> INFO - LaTeX decoding ...
-[823] bibtex.pm:1471> INFO - Found BibTeX data source 'RevisitingtheAnomalies.bib'
-[826] Utils.pm:304> WARN - Duplicate entry key: 'chu2017causal' in file 'RevisitingtheAnomalies.bib', skipping ...
-[1052] Utils.pm:304> WARN - BibTeX subsystem: C:\Users\jackw\AppData\Local\Temp\biber_tmp__trP\RevisitingtheAnomalies.bib_25860.utf8, line 11, warning: 1 characters of junk seen at toplevel
-[1052] Utils.pm:304> WARN - BibTeX subsystem: C:\Users\jackw\AppData\Local\Temp\biber_tmp__trP\RevisitingtheAnomalies.bib_25860.utf8, line 21, warning: 1 characters of junk seen at toplevel
-[1052] Utils.pm:304> WARN - BibTeX subsystem: C:\Users\jackw\AppData\Local\Temp\biber_tmp__trP\RevisitingtheAnomalies.bib_25860.utf8, line 27, warning: 1 characters of junk seen at toplevel
-[1052] Utils.pm:304> WARN - BibTeX subsystem: C:\Users\jackw\AppData\Local\Temp\biber_tmp__trP\RevisitingtheAnomalies.bib_25860.utf8, line 37, warning: 1 characters of junk seen at toplevel
-[1052] Utils.pm:304> WARN - BibTeX subsystem: C:\Users\jackw\AppData\Local\Temp\biber_tmp__trP\RevisitingtheAnomalies.bib_25860.utf8, line 45, warning: 1 characters of junk seen at toplevel
-[1052] Utils.pm:304> WARN - BibTeX subsystem: C:\Users\jackw\AppData\Local\Temp\biber_tmp__trP\RevisitingtheAnomalies.bib_25860.utf8, line 55, warning: 1 characters of junk seen at toplevel
-[1052] Utils.pm:304> WARN - BibTeX subsystem: C:\Users\jackw\AppData\Local\Temp\biber_tmp__trP\RevisitingtheAnomalies.bib_25860.utf8, line 65, warning: 1 characters of junk seen at toplevel
-[1053] Utils.pm:304> WARN - BibTeX subsystem: C:\Users\jackw\AppData\Local\Temp\biber_tmp__trP\RevisitingtheAnomalies.bib_25860.utf8, line 75, warning: 1 characters of junk seen at toplevel
-[1053] Utils.pm:304> WARN - BibTeX subsystem: C:\Users\jackw\AppData\Local\Temp\biber_tmp__trP\RevisitingtheAnomalies.bib_25860.utf8, line 85, warning: 1 characters of junk seen at toplevel
-[1053] Utils.pm:304> WARN - BibTeX subsystem: C:\Users\jackw\AppData\Local\Temp\biber_tmp__trP\RevisitingtheAnomalies.bib_25860.utf8, line 91, warning: 1 characters of junk seen at toplevel
-[1053] Utils.pm:304> WARN - BibTeX subsystem: C:\Users\jackw\AppData\Local\Temp\biber_tmp__trP\RevisitingtheAnomalies.bib_25860.utf8, line 101, warning: 1 characters of junk seen at toplevel
-[1053] Utils.pm:304> WARN - BibTeX subsystem: C:\Users\jackw\AppData\Local\Temp\biber_tmp__trP\RevisitingtheAnomalies.bib_25860.utf8, line 111, warning: 1 characters of junk seen at toplevel
-[1053] Utils.pm:304> WARN - BibTeX subsystem: C:\Users\jackw\AppData\Local\Temp\biber_tmp__trP\RevisitingtheAnomalies.bib_25860.utf8, line 120, warning: 1 characters of junk seen at toplevel
-[1053] Utils.pm:304> WARN - BibTeX subsystem: C:\Users\jackw\AppData\Local\Temp\biber_tmp__trP\RevisitingtheAnomalies.bib_25860.utf8, line 130, warning: 1 characters of junk seen at toplevel
-[1053] Utils.pm:304> WARN - BibTeX subsystem: C:\Users\jackw\AppData\Local\Temp\biber_tmp__trP\RevisitingtheAnomalies.bib_25860.utf8, line 140, warning: 1 characters of junk seen at toplevel
-[1053] Utils.pm:304> WARN - BibTeX subsystem: C:\Users\jackw\AppData\Local\Temp\biber_tmp__trP\RevisitingtheAnomalies.bib_25860.utf8, line 150, warning: 1 characters of junk seen at toplevel
-[1053] Utils.pm:304> WARN - BibTeX subsystem: C:\Users\jackw\AppData\Local\Temp\biber_tmp__trP\RevisitingtheAnomalies.bib_25860.utf8, line 160, warning: 1 characters of junk seen at toplevel
-[1054] Utils.pm:304> WARN - BibTeX subsystem: C:\Users\jackw\AppData\Local\Temp\biber_tmp__trP\RevisitingtheAnomalies.bib_25860.utf8, line 168, warning: 1 characters of junk seen at toplevel
-[1140] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
-[1140] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[1141] Biber.pm:4084> INFO - Sorting list 'nyt/global//global/global' of type 'entry' with template 'nyt' and locale 'en-US'
-[1141] Biber.pm:4090> INFO - No sort tailoring available for locale 'en-US'
-[1216] bbl.pm:652> INFO - Writing 'RevisitingtheAnomalies.bbl' with encoding 'UTF-8'
-[1252] bbl.pm:755> INFO - Output to RevisitingtheAnomalies.bbl
-[1267] Biber.pm:128> INFO - WARNINGS: 19
-=======
-[168] biber-MSWIN64:322> INFO - === 
-[215] Biber.pm:415> INFO - Reading 'RevisitingtheAnomalies.bcf'
-[560] Biber.pm:943> INFO - Found 17 citekeys in bib section 0
-[595] Biber.pm:4256> INFO - Processing section 0
-[595] Utils.pm:75> INFO - Globbing data source 'RevisitingtheAnomalies.bib'
-[615] Utils.pm:91> INFO - Globbed data source 'RevisitingtheAnomalies.bib' to RevisitingtheAnomalies.bib
-[644] Biber.pm:4455> INFO - Looking for bibtex format file 'RevisitingtheAnomalies.bib' for section 0
-[650] bibtex.pm:1653> INFO - LaTeX decoding ...
-[774] bibtex.pm:1471> INFO - Found BibTeX data source 'RevisitingtheAnomalies.bib'
-[778] Utils.pm:304> WARN - Duplicate entry key: 'chu2017causal' in file 'RevisitingtheAnomalies.bib', skipping ...
-[1022] Utils.pm:304> WARN - BibTeX subsystem: C:\Users\jackw\AppData\Local\Temp\biber_tmp_7QaP\RevisitingtheAnomalies.bib_37348.utf8, line 11, warning: 1 characters of junk seen at toplevel
-[1022] Utils.pm:304> WARN - BibTeX subsystem: C:\Users\jackw\AppData\Local\Temp\biber_tmp_7QaP\RevisitingtheAnomalies.bib_37348.utf8, line 21, warning: 1 characters of junk seen at toplevel
-[1022] Utils.pm:304> WARN - BibTeX subsystem: C:\Users\jackw\AppData\Local\Temp\biber_tmp_7QaP\RevisitingtheAnomalies.bib_37348.utf8, line 27, warning: 1 characters of junk seen at toplevel
-[1022] Utils.pm:304> WARN - BibTeX subsystem: C:\Users\jackw\AppData\Local\Temp\biber_tmp_7QaP\RevisitingtheAnomalies.bib_37348.utf8, line 37, warning: 1 characters of junk seen at toplevel
-[1022] Utils.pm:304> WARN - BibTeX subsystem: C:\Users\jackw\AppData\Local\Temp\biber_tmp_7QaP\RevisitingtheAnomalies.bib_37348.utf8, line 45, warning: 1 characters of junk seen at toplevel
-[1022] Utils.pm:304> WARN - BibTeX subsystem: C:\Users\jackw\AppData\Local\Temp\biber_tmp_7QaP\RevisitingtheAnomalies.bib_37348.utf8, line 55, warning: 1 characters of junk seen at toplevel
-[1022] Utils.pm:304> WARN - BibTeX subsystem: C:\Users\jackw\AppData\Local\Temp\biber_tmp_7QaP\RevisitingtheAnomalies.bib_37348.utf8, line 65, warning: 1 characters of junk seen at toplevel
-[1023] Utils.pm:304> WARN - BibTeX subsystem: C:\Users\jackw\AppData\Local\Temp\biber_tmp_7QaP\RevisitingtheAnomalies.bib_37348.utf8, line 75, warning: 1 characters of junk seen at toplevel
-[1023] Utils.pm:304> WARN - BibTeX subsystem: C:\Users\jackw\AppData\Local\Temp\biber_tmp_7QaP\RevisitingtheAnomalies.bib_37348.utf8, line 85, warning: 1 characters of junk seen at toplevel
-[1023] Utils.pm:304> WARN - BibTeX subsystem: C:\Users\jackw\AppData\Local\Temp\biber_tmp_7QaP\RevisitingtheAnomalies.bib_37348.utf8, line 91, warning: 1 characters of junk seen at toplevel
-[1023] Utils.pm:304> WARN - BibTeX subsystem: C:\Users\jackw\AppData\Local\Temp\biber_tmp_7QaP\RevisitingtheAnomalies.bib_37348.utf8, line 101, warning: 1 characters of junk seen at toplevel
-[1023] Utils.pm:304> WARN - BibTeX subsystem: C:\Users\jackw\AppData\Local\Temp\biber_tmp_7QaP\RevisitingtheAnomalies.bib_37348.utf8, line 111, warning: 1 characters of junk seen at toplevel
-[1023] Utils.pm:304> WARN - BibTeX subsystem: C:\Users\jackw\AppData\Local\Temp\biber_tmp_7QaP\RevisitingtheAnomalies.bib_37348.utf8, line 120, warning: 1 characters of junk seen at toplevel
-[1023] Utils.pm:304> WARN - BibTeX subsystem: C:\Users\jackw\AppData\Local\Temp\biber_tmp_7QaP\RevisitingtheAnomalies.bib_37348.utf8, line 130, warning: 1 characters of junk seen at toplevel
-[1023] Utils.pm:304> WARN - BibTeX subsystem: C:\Users\jackw\AppData\Local\Temp\biber_tmp_7QaP\RevisitingtheAnomalies.bib_37348.utf8, line 140, warning: 1 characters of junk seen at toplevel
-[1023] Utils.pm:304> WARN - BibTeX subsystem: C:\Users\jackw\AppData\Local\Temp\biber_tmp_7QaP\RevisitingtheAnomalies.bib_37348.utf8, line 150, warning: 1 characters of junk seen at toplevel
-[1023] Utils.pm:304> WARN - BibTeX subsystem: C:\Users\jackw\AppData\Local\Temp\biber_tmp_7QaP\RevisitingtheAnomalies.bib_37348.utf8, line 160, warning: 1 characters of junk seen at toplevel
-[1024] Utils.pm:304> WARN - BibTeX subsystem: C:\Users\jackw\AppData\Local\Temp\biber_tmp_7QaP\RevisitingtheAnomalies.bib_37348.utf8, line 168, warning: 1 characters of junk seen at toplevel
-[1096] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[1096] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
-[1096] Biber.pm:4084> INFO - Sorting list 'nyt/global//global/global' of type 'entry' with template 'nyt' and locale 'en-US'
-[1096] Biber.pm:4090> INFO - No sort tailoring available for locale 'en-US'
-[1131] bbl.pm:652> INFO - Writing 'RevisitingtheAnomalies.bbl' with encoding 'UTF-8'
-[1152] bbl.pm:755> INFO - Output to RevisitingtheAnomalies.bbl
-[1162] Biber.pm:128> INFO - WARNINGS: 19
->>>>>>> 054056dd1ae59a596693861385c9bf50808ff120
+[0] Config.pm:307> INFO - Logfile is 'RevisitingtheAnomalies.blg'
+[100] biber-MSWIN64:322> INFO - === 
+[126] Biber.pm:415> INFO - Reading 'RevisitingtheAnomalies.bcf'
+[300] Biber.pm:943> INFO - Found 17 citekeys in bib section 0
+[318] Biber.pm:4256> INFO - Processing section 0
+[318] Utils.pm:75> INFO - Globbing data source 'RevisitingtheAnomalies.bib'
+[328] Utils.pm:91> INFO - Globbed data source 'RevisitingtheAnomalies.bib' to RevisitingtheAnomalies.bib
+[345] Biber.pm:4455> INFO - Looking for bibtex format file 'RevisitingtheAnomalies.bib' for section 0
+[350] bibtex.pm:1653> INFO - LaTeX decoding ...
+[396] bibtex.pm:1471> INFO - Found BibTeX data source 'RevisitingtheAnomalies.bib'
+[397] Utils.pm:304> WARN - Duplicate entry key: 'chu2017causal' in file 'RevisitingtheAnomalies.bib', skipping ...
+[521] Utils.pm:304> WARN - BibTeX subsystem: C:\Users\jackw\AppData\Local\Temp\biber_tmp_0UaJ\RevisitingtheAnomalies.bib_27316.utf8, line 11, warning: 1 characters of junk seen at toplevel
+[521] Utils.pm:304> WARN - BibTeX subsystem: C:\Users\jackw\AppData\Local\Temp\biber_tmp_0UaJ\RevisitingtheAnomalies.bib_27316.utf8, line 21, warning: 1 characters of junk seen at toplevel
+[521] Utils.pm:304> WARN - BibTeX subsystem: C:\Users\jackw\AppData\Local\Temp\biber_tmp_0UaJ\RevisitingtheAnomalies.bib_27316.utf8, line 27, warning: 1 characters of junk seen at toplevel
+[521] Utils.pm:304> WARN - BibTeX subsystem: C:\Users\jackw\AppData\Local\Temp\biber_tmp_0UaJ\RevisitingtheAnomalies.bib_27316.utf8, line 37, warning: 1 characters of junk seen at toplevel
+[521] Utils.pm:304> WARN - BibTeX subsystem: C:\Users\jackw\AppData\Local\Temp\biber_tmp_0UaJ\RevisitingtheAnomalies.bib_27316.utf8, line 45, warning: 1 characters of junk seen at toplevel
+[521] Utils.pm:304> WARN - BibTeX subsystem: C:\Users\jackw\AppData\Local\Temp\biber_tmp_0UaJ\RevisitingtheAnomalies.bib_27316.utf8, line 55, warning: 1 characters of junk seen at toplevel
+[521] Utils.pm:304> WARN - BibTeX subsystem: C:\Users\jackw\AppData\Local\Temp\biber_tmp_0UaJ\RevisitingtheAnomalies.bib_27316.utf8, line 65, warning: 1 characters of junk seen at toplevel
+[522] Utils.pm:304> WARN - BibTeX subsystem: C:\Users\jackw\AppData\Local\Temp\biber_tmp_0UaJ\RevisitingtheAnomalies.bib_27316.utf8, line 75, warning: 1 characters of junk seen at toplevel
+[522] Utils.pm:304> WARN - BibTeX subsystem: C:\Users\jackw\AppData\Local\Temp\biber_tmp_0UaJ\RevisitingtheAnomalies.bib_27316.utf8, line 85, warning: 1 characters of junk seen at toplevel
+[522] Utils.pm:304> WARN - BibTeX subsystem: C:\Users\jackw\AppData\Local\Temp\biber_tmp_0UaJ\RevisitingtheAnomalies.bib_27316.utf8, line 91, warning: 1 characters of junk seen at toplevel
+[522] Utils.pm:304> WARN - BibTeX subsystem: C:\Users\jackw\AppData\Local\Temp\biber_tmp_0UaJ\RevisitingtheAnomalies.bib_27316.utf8, line 101, warning: 1 characters of junk seen at toplevel
+[522] Utils.pm:304> WARN - BibTeX subsystem: C:\Users\jackw\AppData\Local\Temp\biber_tmp_0UaJ\RevisitingtheAnomalies.bib_27316.utf8, line 111, warning: 1 characters of junk seen at toplevel
+[522] Utils.pm:304> WARN - BibTeX subsystem: C:\Users\jackw\AppData\Local\Temp\biber_tmp_0UaJ\RevisitingtheAnomalies.bib_27316.utf8, line 120, warning: 1 characters of junk seen at toplevel
+[522] Utils.pm:304> WARN - BibTeX subsystem: C:\Users\jackw\AppData\Local\Temp\biber_tmp_0UaJ\RevisitingtheAnomalies.bib_27316.utf8, line 130, warning: 1 characters of junk seen at toplevel
+[522] Utils.pm:304> WARN - BibTeX subsystem: C:\Users\jackw\AppData\Local\Temp\biber_tmp_0UaJ\RevisitingtheAnomalies.bib_27316.utf8, line 140, warning: 1 characters of junk seen at toplevel
+[522] Utils.pm:304> WARN - BibTeX subsystem: C:\Users\jackw\AppData\Local\Temp\biber_tmp_0UaJ\RevisitingtheAnomalies.bib_27316.utf8, line 150, warning: 1 characters of junk seen at toplevel
+[522] Utils.pm:304> WARN - BibTeX subsystem: C:\Users\jackw\AppData\Local\Temp\biber_tmp_0UaJ\RevisitingtheAnomalies.bib_27316.utf8, line 160, warning: 1 characters of junk seen at toplevel
+[522] Utils.pm:304> WARN - BibTeX subsystem: C:\Users\jackw\AppData\Local\Temp\biber_tmp_0UaJ\RevisitingtheAnomalies.bib_27316.utf8, line 168, warning: 1 characters of junk seen at toplevel
+[585] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[585] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[585] Biber.pm:4084> INFO - Sorting list 'nyt/global//global/global' of type 'entry' with template 'nyt' and locale 'en-US'
+[585] Biber.pm:4090> INFO - No sort tailoring available for locale 'en-US'
+[614] bbl.pm:652> INFO - Writing 'RevisitingtheAnomalies.bbl' with encoding 'UTF-8'
+[626] bbl.pm:755> INFO - Output to RevisitingtheAnomalies.bbl
+[633] Biber.pm:128> INFO - WARNINGS: 19
