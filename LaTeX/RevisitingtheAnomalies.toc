@@ -20,15 +20,15 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {3.1}Anomalies: Data Gathering and Variable Construction}{9}{subsection.3.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {3.1.1}Anomaly Long-Short Portfolios}{12}{subsubsection.3.1.1}%
+\contentsline {subsubsection}{\numberline {3.1.1}Anomaly Long-Short Portfolios}{11}{subsubsection.3.1.1}%
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {3.2}Additional Data}{12}{subsection.3.2}%
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{\numberline {3.2.1}Fama French Factor Data}{12}{subsubsection.3.2.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {3.2.2}Volatility Data}{13}{subsubsection.3.2.2}%
+\contentsline {subsubsection}{\numberline {3.2.2}Volatility Data}{12}{subsubsection.3.2.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {3.2.3}Economic Uncertainty Data}{13}{subsubsection.3.2.3}%
+\contentsline {subsubsection}{\numberline {3.2.3}Economic Uncertainty Data}{12}{subsubsection.3.2.3}%
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{\numberline {3.2.4}Market Liquidity Data}{13}{subsubsection.3.2.4}%
 \defcounter {refsection}{0}\relax 
